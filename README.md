@@ -3,8 +3,6 @@
 [![Swift](https://img.shields.io/badge/Swift-5.9-orange.svg)](https://swift.org)
 [![iOS](https://img.shields.io/badge/iOS-15.0+-blue.svg)](https://developer.apple.com/ios/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Tests](https://img.shields.io/badge/Tests-Passing-brightgreen.svg)](https://github.com/muhittincamdali/iOS-Testing-Automation-Framework/actions)
-[![Code Coverage](https://img.shields.io/badge/Coverage-100%25-brightgreen.svg)](https://github.com/muhittincamdali/iOS-Testing-Automation-Framework/actions)
 
 A comprehensive, enterprise-grade testing automation framework for iOS applications. Built with modern Swift and designed for scalability, reliability, and performance.
 
