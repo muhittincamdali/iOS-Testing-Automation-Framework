@@ -13,11 +13,14 @@ iOS Testing Automation Framework is a comprehensive, enterprise-grade testing so
 
 ## 📊 Project Statistics
 
-![GitHub stars](https://img.shields.io/github/stars/muhittincamdali/iOS-Testing-Automation-Framework?style=social)
-![GitHub forks](https://img.shields.io/github/forks/muhittincamdali/iOS-Testing-Automation-Framework?style=social)
-![GitHub issues](https://img.shields.io/github/issues/muhittincamdali/iOS-Testing-Automation-Framework)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/muhittincamdali/iOS-Testing-Automation-Framework)
-![GitHub license](https://img.shields.io/github/license/muhittincamdali/iOS-Testing-Automation-Framework)
+<div align="center">
+
+[![GitHub stars](https://img.shields.io/github/stars/muhittincamdali/iOS-Testing-Automation-Framework?style=social)](https://github.com/muhittincamdali/iOS-Testing-Automation-Framework/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/muhittincamdali/iOS-Testing-Automation-Framework?style=social)](https://github.com/muhittincamdali/iOS-Testing-Automation-Framework/network)
+[![GitHub issues](https://img.shields.io/github/issues/muhittincamdali/iOS-Testing-Automation-Framework)](https://github.com/muhittincamdali/iOS-Testing-Automation-Framework/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/muhittincamdali/iOS-Testing-Automation-Framework)](https://github.com/muhittincamdali/iOS-Testing-Automation-Framework/pulls)
+
+</div>
 
 ## 🌟 Stargazers
 
@@ -103,9 +106,19 @@ We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.
 4. Add tests for new functionality
 5. Submit a pull request
 
+## 🙏 Acknowledgments
+
+- Apple for the excellent iOS testing APIs
+- The Swift community for inspiration and feedback
+- All contributors who help improve this framework
+- Testing automation best practices
+- Quality assurance standards
+
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+**⭐ Star this repository if it helped you!**
 
 ## 💬 Support
 
@@ -113,12 +126,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Discussions**: [GitHub Discussions](https://github.com/muhittincamdali/iOS-Testing-Automation-Framework/discussions)
 - **Documentation**: [Documentation](Documentation/)
 - **Examples**: [Examples](Examples/)
-
-## 🙏 Acknowledgments
-
-- Built with ❤️ for the iOS community
-- Inspired by modern testing practices and industry standards
-- Special thanks to the open source community for continuous feedback and contributions
 
 ---
 
