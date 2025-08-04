@@ -1,3 +1,3 @@
-# Security Testing Guide
+# Security Testing
 
-This guide provides comprehensive security testing strategies and best practices.
+This guide covers security testing methodologies and tools.

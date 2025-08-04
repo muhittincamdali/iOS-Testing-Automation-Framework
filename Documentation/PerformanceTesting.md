@@ -1,3 +1,3 @@
-# Performance Testing Guide
+# Performance Testing
 
-This guide provides comprehensive performance testing strategies and best practices.
+This guide covers performance testing strategies and tools.

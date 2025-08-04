@@ -1,3 +1,3 @@
-# Load Testing Guide
+# Load Testing
 
-This guide provides comprehensive load testing strategies and best practices.
+This guide covers load testing and stress testing strategies.

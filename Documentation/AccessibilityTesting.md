@@ -1,3 +1,3 @@
-# Accessibility Testing Guide
+# Accessibility Testing
 
-This guide provides comprehensive accessibility testing strategies and best practices.
+This guide covers accessibility testing and WCAG compliance.
