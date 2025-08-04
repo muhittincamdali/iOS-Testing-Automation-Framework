@@ -1,3 +1,3 @@
 # Enterprise Examples
 
-This directory contains enterprise-level testing examples for the iOS Testing Automation Framework.
+This directory contains enterprise-level testing examples for large-scale applications.

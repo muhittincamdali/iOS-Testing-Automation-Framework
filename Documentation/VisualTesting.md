@@ -1,3 +1,3 @@
-# Visual Testing Guide
+# Visual Testing
 
-This guide provides comprehensive visual testing strategies and best practices.
+This guide covers visual regression testing and UI consistency.
