@@ -11,6 +11,18 @@
 
 iOS Testing Automation Framework is a comprehensive, enterprise-grade testing solution that provides automated UI testing, unit testing, performance testing, and security testing capabilities for iOS applications.
 
+## 📊 Project Statistics
+
+![GitHub stars](https://img.shields.io/github/stars/muhittincamdali/iOS-Testing-Automation-Framework?style=social)
+![GitHub forks](https://img.shields.io/github/forks/muhittincamdali/iOS-Testing-Automation-Framework?style=social)
+![GitHub issues](https://img.shields.io/github/issues/muhittincamdali/iOS-Testing-Automation-Framework)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/muhittincamdali/iOS-Testing-Automation-Framework)
+![GitHub license](https://img.shields.io/github/license/muhittincamdali/iOS-Testing-Automation-Framework)
+
+## 🌟 Stargazers
+
+[![Stargazers repo roster for @muhittincamdali/iOS-Testing-Automation-Framework](https://reporoster.com/stars/muhittincamdali/iOS-Testing-Automation-Framework)](https://github.com/muhittincamdali/iOS-Testing-Automation-Framework/stargazers)
+
 ## ✨ Features
 
 ### 🧪 Comprehensive Testing
@@ -18,12 +30,22 @@ iOS Testing Automation Framework is a comprehensive, enterprise-grade testing so
 - **Unit Testing**: Comprehensive unit test framework with XCTest
 - **Performance Testing**: Memory and CPU performance monitoring
 - **Security Testing**: Vulnerability scanning and security validation
+- **Accessibility Testing**: WCAG compliance validation
+- **Network Testing**: API endpoint testing and validation
 
 ### 🚀 Advanced Automation
 - **Parallel Execution**: Multi-device simultaneous testing
 - **Cross-Platform**: iOS, iPadOS, and macOS support
 - **Cloud Integration**: CI/CD pipeline integration
 - **Smart Reporting**: Detailed test reports and analytics
+- **Visual Testing**: Screenshot comparison and regression testing
+- **Load Testing**: Performance under high load conditions
+
+### 🔧 Developer Experience
+- **Easy Integration**: Simple setup and configuration
+- **Comprehensive Documentation**: Detailed guides and examples
+- **Active Community**: Regular updates and support
+- **Enterprise Ready**: Production-grade reliability
 
 ## 🚀 Quick Start
 
@@ -49,20 +71,55 @@ uiTestSuite.addTest(LoginFlowTest())
 let results = try await testFramework.runTests(uiTestSuite)
 ```
 
+### Advanced Configuration
+
+```swift
+let config = TestConfiguration()
+config.enableParallelExecution = true
+config.maxConcurrentTests = 4
+config.timeoutInterval = 30.0
+config.enablePerformanceMonitoring = true
+
+let framework = TestAutomationFramework(configuration: config)
+```
+
 ## 📚 Documentation
 
 - [API Reference](Documentation/API.md)
 - [Architecture Guide](Documentation/Architecture.md)
 - [Examples](Examples/)
+- [Best Practices](Documentation/BestPractices.md)
+- [Troubleshooting](Documentation/Troubleshooting.md)
 
 ## 🤝 Contributing
 
-See [Contributing Guidelines](CONTRIBUTING.md) for details.
+We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details on how to submit pull requests, report issues, and contribute to the project.
+
+### Development Setup
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Add tests for new functionality
+5. Submit a pull request
 
 ## 📄 License
 
-MIT License - see [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 💬 Support
+
+- **Issues**: [GitHub Issues](https://github.com/muhittincamdali/iOS-Testing-Automation-Framework/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/muhittincamdali/iOS-Testing-Automation-Framework/discussions)
+- **Documentation**: [Documentation](Documentation/)
+- **Examples**: [Examples](Examples/)
+
+## 🙏 Acknowledgments
+
+- Built with ❤️ for the iOS community
+- Inspired by modern testing practices and industry standards
+- Special thanks to the open source community for continuous feedback and contributions
 
 ---
 
-**Made with ❤️ by [Muhittin Camdali](https://github.com/muhittincamdali)**
+⭐ **Star this repository if it helped you!** ⭐
