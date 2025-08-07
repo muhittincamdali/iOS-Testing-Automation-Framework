@@ -2,6 +2,12 @@
 
 <div align="center">
 
+![GitHub Stars](https://img.shields.io/github/stars/muhittincamdali/iOS-Testing-Automation-Framework?style=for-the-badge&logo=github&logoColor=white&color=gold&label=Stars)
+![GitHub Forks](https://img.shields.io/github/forks/muhittincamdali/iOS-Testing-Automation-Framework?style=for-the-badge&logo=github&logoColor=white&color=blue&label=Forks)
+![GitHub Issues](https://img.shields.io/github/issues/muhittincamdali/iOS-Testing-Automation-Framework?style=for-the-badge&logo=github&logoColor=white&color=red&label=Issues)
+![GitHub Pull Requests](https://img.shields.io/github/issues-pr/muhittincamdali/iOS-Testing-Automation-Framework?style=for-the-badge&logo=github&logoColor=white&color=green&label=PRs)
+![GitHub License](https://img.shields.io/github/license/muhittincamdali/iOS-Testing-Automation-Framework?style=for-the-badge&logo=github&logoColor=white&color=purple&label=License)
+
 ![Swift](https://img.shields.io/badge/Swift-5.9+-FA7343?style=for-the-badge&logo=swift&logoColor=white)
 ![iOS](https://img.shields.io/badge/iOS-15.0+-000000?style=for-the-badge&logo=ios&logoColor=white)
 ![Xcode](https://img.shields.io/badge/Xcode-15.0+-007ACC?style=for-the-badge&logo=Xcode&logoColor=white)
@@ -1322,11 +1328,22 @@ SOFTWARE.
 
 <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
 
-![GitHub Stars](https://img.shields.io/github/stars/muhittincamdali/iOS-Testing-Automation-Framework?style=for-the-badge&logo=star&logoColor=gold&color=gold&label=Stars)
-![GitHub Forks](https://img.shields.io/github/forks/muhittincamdali/iOS-Testing-Automation-Framework?style=for-the-badge&logo=git&logoColor=white&color=blue&label=Forks)
+![GitHub Stars](https://img.shields.io/github/stars/muhittincamdali/iOS-Testing-Automation-Framework?style=for-the-badge&logo=github&logoColor=white&color=gold&label=Stars)
+![GitHub Forks](https://img.shields.io/github/forks/muhittincamdali/iOS-Testing-Automation-Framework?style=for-the-badge&logo=github&logoColor=white&color=blue&label=Forks)
 ![GitHub Issues](https://img.shields.io/github/issues/muhittincamdali/iOS-Testing-Automation-Framework?style=for-the-badge&logo=github&logoColor=white&color=red&label=Issues)
 ![GitHub Pull Requests](https://img.shields.io/github/issues-pr/muhittincamdali/iOS-Testing-Automation-Framework?style=for-the-badge&logo=github&logoColor=white&color=green&label=PRs)
 ![GitHub License](https://img.shields.io/github/license/muhittincamdali/iOS-Testing-Automation-Framework?style=for-the-badge&logo=github&logoColor=white&color=purple&label=License)
+
+</div>
+
+### 📈 GitHub Stats
+
+<div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=muhittincamdali&show_icons=true&theme=radical&hide_border=true&include_all_commits=true&count_private=true)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=muhittincamdali&layout=compact&theme=radical&hide_border=true&langs_count=8)
+![GitHub Streak](https://streak-stats.demolab.com/?user=muhittincamdali&theme=radical&hide_border=true)
+![Profile Views](https://komarev.com/ghpvc/?username=muhittincamdali&color=brightgreen&style=for-the-badge&label=Profile+Views)
 
 </div>
 
