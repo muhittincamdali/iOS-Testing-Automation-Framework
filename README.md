@@ -1360,7 +1360,7 @@ SOFTWARE.
 
 ### 🌟 Stargazers Community
 
-[![Stargazers repo roster for @muhittincamdali/iOS-Testing-Automation-Framework](https://reporoster.com/stars/muhittincamdali/iOS-Testing-Automation-Framework)](https://github.com/muhittincamdali/iOS-Testing-Automation-Framework/stargazers)
+[![Stargazers repo roster for @muhittincamdali/iOS-Testing-Automation-Framework](https://starchart.cc/muhittincamdali/iOS-Testing-Automation-Framework.svg)](https://github.com/muhittincamdali/iOS-Testing-Automation-Framework/stargazers)
 
 **⭐ Star this repository if it helped you!**
 
