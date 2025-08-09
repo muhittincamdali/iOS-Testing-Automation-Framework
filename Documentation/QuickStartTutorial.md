@@ -1,5 +1,57 @@
 # 🚀 Quick Start Tutorial
 
+<!-- TOC START -->
+## Table of Contents
+- [🚀 Quick Start Tutorial](#-quick-start-tutorial)
+- [📋 Table of Contents](#-table-of-contents)
+- [🛠️ Prerequisites](#-prerequisites)
+  - [Verify Your Setup](#verify-your-setup)
+- [Check Xcode version](#check-xcode-version)
+- [Check Swift version](#check-swift-version)
+- [Check CocoaPods version](#check-cocoapods-version)
+- [📦 Installation](#-installation)
+  - [Option 1: Swift Package Manager (Recommended)](#option-1-swift-package-manager-recommended)
+  - [Option 2: CocoaPods](#option-2-cocoapods)
+  - [Option 3: Manual Installation](#option-3-manual-installation)
+- [⚡ Basic Setup](#-basic-setup)
+  - [1. Import the Framework](#1-import-the-framework)
+  - [2. Create Test Configuration](#2-create-test-configuration)
+  - [3. Initialize the Framework](#3-initialize-the-framework)
+- [🧪 Your First Test](#-your-first-test)
+  - [Create a Simple Unit Test](#create-a-simple-unit-test)
+  - [Create a UI Test](#create-a-ui-test)
+- [🚀 Running Tests](#-running-tests)
+  - [Run Tests in Xcode](#run-tests-in-xcode)
+  - [Run Tests from Command Line](#run-tests-from-command-line)
+- [Run all tests](#run-all-tests)
+- [Run specific test class](#run-specific-test-class)
+- [Run specific test method](#run-specific-test-method)
+  - [Run Tests Programmatically](#run-tests-programmatically)
+- [📊 Test Reports](#-test-reports)
+  - [Generate HTML Report](#generate-html-report)
+  - [Generate JSON Report](#generate-json-report)
+  - [View Reports](#view-reports)
+- [🔧 Advanced Configuration](#-advanced-configuration)
+  - [Performance Testing](#performance-testing)
+  - [Security Testing](#security-testing)
+  - [Accessibility Testing](#accessibility-testing)
+- [🎯 Next Steps](#-next-steps)
+  - [Explore Advanced Features](#explore-advanced-features)
+  - [Read the Documentation](#read-the-documentation)
+  - [Join the Community](#join-the-community)
+- [🆘 Troubleshooting](#-troubleshooting)
+  - [Common Issues](#common-issues)
+    - [Build Errors](#build-errors)
+- [Clean build folder](#clean-build-folder)
+- [Reset package cache](#reset-package-cache)
+    - [Test Failures](#test-failures)
+- [Run tests with verbose output](#run-tests-with-verbose-output)
+- [Check test logs](#check-test-logs)
+    - [Performance Issues](#performance-issues)
+  - [Getting Help](#getting-help)
+<!-- TOC END -->
+
+
 <div align="center">
 
 **Get started with iOS Testing Automation Framework in 5 minutes!**

@@ -1,5 +1,41 @@
 # 📝 Coding Standards
 
+<!-- TOC START -->
+## Table of Contents
+- [📝 Coding Standards](#-coding-standards)
+- [📋 Table of Contents](#-table-of-contents)
+- [🍎 Swift Style Guide](#-swift-style-guide)
+  - [General Principles](#general-principles)
+  - [Code Formatting](#code-formatting)
+- [🏷️ Naming Conventions](#-naming-conventions)
+  - [Classes and Structs](#classes-and-structs)
+  - [Functions and Methods](#functions-and-methods)
+  - [Variables and Properties](#variables-and-properties)
+  - [Constants](#constants)
+- [📁 Code Organization](#-code-organization)
+  - [File Structure](#file-structure)
+  - [MARK Comments](#mark-comments)
+- [�� Documentation Standards](#-documentation-standards)
+  - [Class Documentation](#class-documentation)
+  - [Method Documentation](#method-documentation)
+  - [Property Documentation](#property-documentation)
+- [⚠️ Error Handling](#-error-handling)
+  - [Error Types](#error-types)
+  - [Error Handling Patterns](#error-handling-patterns)
+- [⚡ Performance Guidelines](#-performance-guidelines)
+  - [Memory Management](#memory-management)
+  - [Efficient Data Structures](#efficient-data-structures)
+  - [Async/Await Best Practices](#asyncawait-best-practices)
+- [🧪 Testing Standards](#-testing-standards)
+  - [Test Structure](#test-structure)
+  - [Test Naming](#test-naming)
+  - [Test Coverage](#test-coverage)
+- [📋 Code Review Checklist](#-code-review-checklist)
+  - [Before Submitting Code](#before-submitting-code)
+  - [During Code Review](#during-code-review)
+<!-- TOC END -->
+
+
 <div align="center">
 
 **Comprehensive coding standards and guidelines for iOS Testing Automation Framework**

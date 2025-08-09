@@ -1,5 +1,34 @@
 # 🏗️ Architecture Tutorial
 
+<!-- TOC START -->
+## Table of Contents
+- [🏗️ Architecture Tutorial](#-architecture-tutorial)
+- [📋 Table of Contents](#-table-of-contents)
+- [🎯 Overview](#-overview)
+  - [Architecture Principles](#architecture-principles)
+- [🏗️ Core Architecture](#-core-architecture)
+  - [High-Level Architecture](#high-level-architecture)
+  - [Component Architecture](#component-architecture)
+- [�� Component Design](#-component-design)
+  - [TestConfiguration](#testconfiguration)
+  - [TestCase](#testcase)
+  - [TestSuite](#testsuite)
+- [🔄 Data Flow](#-data-flow)
+  - [Test Execution Flow](#test-execution-flow)
+  - [Parallel Execution Flow](#parallel-execution-flow)
+  - [Error Handling Flow](#error-handling-flow)
+- [🔌 Extension Points](#-extension-points)
+  - [Custom Test Types](#custom-test-types)
+  - [Custom Reporters](#custom-reporters)
+  - [Custom Validators](#custom-validators)
+- [📋 Best Practices](#-best-practices)
+  - [Architecture Best Practices](#architecture-best-practices)
+  - [Performance Best Practices](#performance-best-practices)
+  - [Error Handling Best Practices](#error-handling-best-practices)
+- [🎯 Conclusion](#-conclusion)
+<!-- TOC END -->
+
+
 <div align="center">
 
 **Deep dive into the iOS Testing Automation Framework architecture**

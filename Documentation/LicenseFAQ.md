@@ -1,5 +1,46 @@
 # 📋 License FAQ
 
+<!-- TOC START -->
+## Table of Contents
+- [📋 License FAQ](#-license-faq)
+- [📋 Table of Contents](#-table-of-contents)
+- [❓ General Questions](#-general-questions)
+  - [Q: What license is the iOS Testing Automation Framework released under?](#q-what-license-is-the-ios-testing-automation-framework-released-under)
+  - [Q: What does the MIT License allow me to do?](#q-what-does-the-mit-license-allow-me-to-do)
+  - [Q: What are the requirements of the MIT License?](#q-what-are-the-requirements-of-the-mit-license)
+  - [Q: Is the MIT License compatible with other licenses?](#q-is-the-mit-license-compatible-with-other-licenses)
+- [💼 Commercial Use](#-commercial-use)
+  - [Q: Can I use the framework in commercial software?](#q-can-i-use-the-framework-in-commercial-software)
+  - [Q: Do I need to pay anything for commercial use?](#q-do-i-need-to-pay-anything-for-commercial-use)
+  - [Q: Can I sell software that includes the framework?](#q-can-i-sell-software-that-includes-the-framework)
+  - [Q: Can I use the framework in proprietary software?](#q-can-i-use-the-framework-in-proprietary-software)
+- [🔧 Modification and Distribution](#-modification-and-distribution)
+  - [Q: Can I modify the framework?](#q-can-i-modify-the-framework)
+  - [Q: Can I distribute modified versions?](#q-can-i-distribute-modified-versions)
+  - [Q: Do I need to contribute my changes back?](#q-do-i-need-to-contribute-my-changes-back)
+  - [Q: Can I create a fork of the framework?](#q-can-i-create-a-fork-of-the-framework)
+- [📝 Attribution Requirements](#-attribution-requirements)
+  - [Q: What attribution is required?](#q-what-attribution-is-required)
+  - [Q: Where should I include the attribution?](#q-where-should-i-include-the-attribution)
+  - [Q: Can I remove the copyright notice?](#q-can-i-remove-the-copyright-notice)
+  - [Q: What if I forget to include attribution?](#q-what-if-i-forget-to-include-attribution)
+- [⚖️ Legal Questions](#-legal-questions)
+  - [Q: What happens if I violate the license terms?](#q-what-happens-if-i-violate-the-license-terms)
+  - [Q: Can I be sued for using the framework?](#q-can-i-be-sued-for-using-the-framework)
+  - [Q: Is the license legally binding?](#q-is-the-license-legally-binding)
+  - [Q: What if I have questions about the license?](#q-what-if-i-have-questions-about-the-license)
+- [🆘 Support and Liability](#-support-and-liability)
+  - [Q: Is there any warranty provided?](#q-is-there-any-warranty-provided)
+  - [Q: Can I hold the authors liable for problems?](#q-can-i-hold-the-authors-liable-for-problems)
+  - [Q: Is support provided?](#q-is-support-provided)
+  - [Q: What if I find a bug or security issue?](#q-what-if-i-find-a-bug-or-security-issue)
+- [📞 Additional Resources](#-additional-resources)
+  - [Official Resources](#official-resources)
+  - [External Resources](#external-resources)
+  - [Legal Disclaimer](#legal-disclaimer)
+<!-- TOC END -->
+
+
 <div align="center">
 
 **Frequently Asked Questions about the iOS Testing Automation Framework License**

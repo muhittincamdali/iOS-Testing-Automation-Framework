@@ -1,5 +1,46 @@
 # 🧪 Testing Best Practices
 
+<!-- TOC START -->
+## Table of Contents
+- [🧪 Testing Best Practices](#-testing-best-practices)
+- [📋 Table of Contents](#-table-of-contents)
+- [🏗️ Test Pyramid Strategy](#-test-pyramid-strategy)
+  - [Overview](#overview)
+  - [Test Distribution](#test-distribution)
+  - [Benefits](#benefits)
+- [🧪 Unit Testing Best Practices](#-unit-testing-best-practices)
+  - [Test Structure](#test-structure)
+  - [Test Naming](#test-naming)
+  - [Test Organization](#test-organization)
+  - [Mocking Best Practices](#mocking-best-practices)
+- [🔗 Integration Testing Best Practices](#-integration-testing-best-practices)
+  - [Test Scope](#test-scope)
+  - [Database Testing](#database-testing)
+- [🎯 UI Testing Best Practices](#-ui-testing-best-practices)
+  - [Test Structure](#test-structure)
+  - [Accessibility Testing](#accessibility-testing)
+  - [Performance UI Testing](#performance-ui-testing)
+- [⚡ Performance Testing Best Practices](#-performance-testing-best-practices)
+  - [Memory Testing](#memory-testing)
+  - [CPU Testing](#cpu-testing)
+  - [Network Performance Testing](#network-performance-testing)
+- [🔒 Security Testing Best Practices](#-security-testing-best-practices)
+  - [Input Validation Testing](#input-validation-testing)
+  - [Authentication Testing](#authentication-testing)
+- [📊 Test Data Management](#-test-data-management)
+  - [Test Data Setup](#test-data-setup)
+  - [Test Data Cleanup](#test-data-cleanup)
+- [🛠️ Test Environment Setup](#-test-environment-setup)
+  - [Environment Configuration](#environment-configuration)
+  - [Test Infrastructure](#test-infrastructure)
+- [📋 Testing Checklist](#-testing-checklist)
+  - [Before Writing Tests](#before-writing-tests)
+  - [During Test Development](#during-test-development)
+  - [After Test Development](#after-test-development)
+  - [Continuous Improvement](#continuous-improvement)
+<!-- TOC END -->
+
+
 <div align="center">
 
 **Comprehensive guide to testing best practices for iOS applications**
