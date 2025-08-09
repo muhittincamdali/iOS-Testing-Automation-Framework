@@ -1,5 +1,21 @@
 # Test Configuration Guide
 
+<!-- TOC START -->
+## Table of Contents
+- [Test Configuration Guide](#test-configuration-guide)
+- [Overview](#overview)
+- [Architecture](#architecture)
+- [Installation (SPM)](#installation-spm)
+- [Quick Start](#quick-start)
+- [API Reference](#api-reference)
+- [Usage Examples](#usage-examples)
+- [Performance](#performance)
+- [Security](#security)
+- [Troubleshooting](#troubleshooting)
+- [FAQ](#faq)
+<!-- TOC END -->
+
+
 This guide explains how to configure the iOS Testing Automation Framework for different testing scenarios.
 
 ## Overview

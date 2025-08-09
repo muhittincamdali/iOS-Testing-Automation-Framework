@@ -1,5 +1,50 @@
 # 📝 Attribution Guide
 
+<!-- TOC START -->
+## Table of Contents
+- [📝 Attribution Guide](#-attribution-guide)
+- [📋 Table of Contents](#-table-of-contents)
+- [🎯 Overview](#-overview)
+  - [License Requirements](#license-requirements)
+- [📋 When Attribution is Required](#-when-attribution-is-required)
+  - [✅ Required Attribution](#-required-attribution)
+  - [❌ Not Required](#-not-required)
+- [🔗 How to Attribute](#-how-to-attribute)
+  - [1. Software Attribution](#1-software-attribution)
+  - [2. Documentation Attribution](#2-documentation-attribution)
+- [Testing Framework](#testing-framework)
+  - [3. README Attribution](#3-readme-attribution)
+- [Dependencies](#dependencies)
+  - [iOS Testing Automation Framework](#ios-testing-automation-framework)
+- [📝 Attribution Examples](#-attribution-examples)
+  - [Example 1: iOS App](#example-1-ios-app)
+  - [Example 2: Package.swift](#example-2-packageswift)
+  - [Example 3: Podfile](#example-3-podfile)
+- [Podfile](#podfile)
+  - [Example 4: Documentation](#example-4-documentation)
+- [My App Documentation](#my-app-documentation)
+- [Testing](#testing)
+  - [Framework Information](#framework-information)
+  - [Features Used](#features-used)
+  - [License Notice](#license-notice)
+- [✅ Best Practices](#-best-practices)
+  - [1. Clear Attribution](#1-clear-attribution)
+  - [2. Consistent Formatting](#2-consistent-formatting)
+  - [3. Proper Placement](#3-proper-placement)
+  - [4. Complete Information](#4-complete-information)
+- [Acknowledgments](#acknowledgments)
+  - [iOS Testing Automation Framework](#ios-testing-automation-framework)
+- [❓ Frequently Asked Questions](#-frequently-asked-questions)
+  - [Q: Do I need to attribute if I only use the framework internally?](#q-do-i-need-to-attribute-if-i-only-use-the-framework-internally)
+  - [Q: What if I modify the framework?](#q-what-if-i-modify-the-framework)
+  - [Q: Can I use the framework in commercial software?](#q-can-i-use-the-framework-in-commercial-software)
+  - [Q: Where should I put the attribution in my project?](#q-where-should-i-put-the-attribution-in-my-project)
+  - [Q: Do I need to include the full license text?](#q-do-i-need-to-include-the-full-license-text)
+  - [Q: What if I forget to attribute?](#q-what-if-i-forget-to-attribute)
+- [📞 Contact](#-contact)
+<!-- TOC END -->
+
+
 <div align="center">
 
 **Guidelines for properly attributing the iOS Testing Automation Framework**

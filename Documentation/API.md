@@ -1,5 +1,36 @@
 # API Reference
 
+<!-- TOC START -->
+## Table of Contents
+- [API Reference](#api-reference)
+- [Overview](#overview)
+- [Core Components](#core-components)
+  - [TestAutomationFramework](#testautomationframework)
+    - [Configuration](#configuration)
+    - [Running Tests](#running-tests)
+  - [TestCase](#testcase)
+  - [TestSuite](#testsuite)
+  - [TestConfiguration](#testconfiguration)
+- [UI Testing](#ui-testing)
+  - [UITestSuite](#uitestsuite)
+  - [UITestCase](#uitestcase)
+- [Performance Monitoring](#performance-monitoring)
+  - [PerformanceMonitor](#performancemonitor)
+  - [PerformanceMetrics](#performancemetrics)
+- [Report Generation](#report-generation)
+  - [TestReportGenerator](#testreportgenerator)
+  - [TestReport](#testreport)
+- [Error Handling](#error-handling)
+  - [TestExecutionError](#testexecutionerror)
+- [Advanced Usage](#advanced-usage)
+  - [Parallel Execution](#parallel-execution)
+  - [Custom Performance Metrics](#custom-performance-metrics)
+  - [Test Environment](#test-environment)
+- [Best Practices](#best-practices)
+- [Examples](#examples)
+<!-- TOC END -->
+
+
 ## Overview
 
 The iOS Testing Automation Framework provides a comprehensive API for automated testing of iOS applications. This document outlines the main components and their usage.

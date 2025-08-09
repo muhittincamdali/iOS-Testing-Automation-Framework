@@ -1,5 +1,21 @@
 # Advanced Examples
 
+<!-- TOC START -->
+## Table of Contents
+- [Advanced Examples](#advanced-examples)
+- [Overview](#overview)
+- [Architecture](#architecture)
+- [Installation (SPM)](#installation-spm)
+- [Quick Start](#quick-start)
+- [API Reference](#api-reference)
+- [Usage Examples](#usage-examples)
+- [Performance](#performance)
+- [Security](#security)
+- [Troubleshooting](#troubleshooting)
+- [FAQ](#faq)
+<!-- TOC END -->
+
+
 This directory contains advanced testing examples for the iOS Testing Automation Framework.
 
 ## Overview

@@ -1,5 +1,47 @@
 # iOS Testing Automation Framework - Best Practices
 
+<!-- TOC START -->
+## Table of Contents
+- [iOS Testing Automation Framework - Best Practices](#ios-testing-automation-framework-best-practices)
+- [Overview](#overview)
+- [Test Organization](#test-organization)
+  - [1. Test Structure](#1-test-structure)
+  - [2. Naming Conventions](#2-naming-conventions)
+  - [3. Test Categories](#3-test-categories)
+- [Configuration Management](#configuration-management)
+  - [1. Environment-Specific Configurations](#1-environment-specific-configurations)
+  - [2. Configuration Validation](#2-configuration-validation)
+- [Test Data Management](#test-data-management)
+  - [1. Test Data Setup](#1-test-data-setup)
+  - [2. Test Data Isolation](#2-test-data-isolation)
+- [UI Testing Best Practices](#ui-testing-best-practices)
+  - [1. Page Object Pattern](#1-page-object-pattern)
+  - [2. Wait Strategies](#2-wait-strategies)
+  - [3. Screenshot Capture](#3-screenshot-capture)
+- [Performance Testing](#performance-testing)
+  - [1. Performance Baselines](#1-performance-baselines)
+  - [2. Performance Monitoring](#2-performance-monitoring)
+- [Accessibility Testing](#accessibility-testing)
+  - [1. Accessibility Validation](#1-accessibility-validation)
+- [Security Testing](#security-testing)
+  - [1. Input Validation](#1-input-validation)
+- [Reporting Best Practices](#reporting-best-practices)
+  - [1. Custom Reporters](#1-custom-reporters)
+  - [2. Performance Reporting](#2-performance-reporting)
+- [CI/CD Integration](#cicd-integration)
+  - [1. GitHub Actions](#1-github-actions)
+  - [2. Jenkins Pipeline](#2-jenkins-pipeline)
+- [Error Handling](#error-handling)
+  - [1. Graceful Degradation](#1-graceful-degradation)
+  - [2. Error Categorization](#2-error-categorization)
+- [Maintenance](#maintenance)
+  - [1. Regular Updates](#1-regular-updates)
+  - [2. Documentation](#2-documentation)
+  - [3. Code Reviews](#3-code-reviews)
+- [Conclusion](#conclusion)
+<!-- TOC END -->
+
+
 ## Overview
 
 This document provides comprehensive best practices for using the iOS Testing Automation Framework effectively. Following these guidelines will help you create robust, maintainable, and efficient test suites.

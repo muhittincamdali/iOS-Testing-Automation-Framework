@@ -1,5 +1,21 @@
 # Performance Testing
 
+<!-- TOC START -->
+## Table of Contents
+- [Performance Testing](#performance-testing)
+- [Overview](#overview)
+- [Architecture](#architecture)
+- [Installation (SPM)](#installation-spm)
+- [Quick Start](#quick-start)
+- [API Reference](#api-reference)
+- [Usage Examples](#usage-examples)
+- [Performance](#performance)
+- [Security](#security)
+- [Troubleshooting](#troubleshooting)
+- [FAQ](#faq)
+<!-- TOC END -->
+
+
 This guide covers performance testing strategies and tools.
 
 ## Overview

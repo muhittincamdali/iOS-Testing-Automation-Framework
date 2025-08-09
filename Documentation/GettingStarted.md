@@ -1,5 +1,21 @@
 # Getting Started Guide
 
+<!-- TOC START -->
+## Table of Contents
+- [Getting Started Guide](#getting-started-guide)
+- [Overview](#overview)
+- [Architecture](#architecture)
+- [Installation (SPM)](#installation-spm)
+- [Quick Start](#quick-start)
+- [API Reference](#api-reference)
+- [Usage Examples](#usage-examples)
+- [Performance](#performance)
+- [Security](#security)
+- [Troubleshooting](#troubleshooting)
+- [FAQ](#faq)
+<!-- TOC END -->
+
+
 This guide provides step-by-step instructions for setting up and using the iOS Testing Automation Framework.
 
 ## Overview

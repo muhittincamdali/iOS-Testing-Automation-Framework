@@ -1,5 +1,54 @@
 # 💼 Commercial Use Guidelines
 
+<!-- TOC START -->
+## Table of Contents
+- [💼 Commercial Use Guidelines](#-commercial-use-guidelines)
+- [📋 Table of Contents](#-table-of-contents)
+- [🎯 Overview](#-overview)
+  - [Key Points](#key-points)
+- [📜 License Terms](#-license-terms)
+  - [MIT License Summary](#mit-license-summary)
+  - [Requirements](#requirements)
+  - [Full License Text](#full-license-text)
+- [🏢 Commercial Use Rights](#-commercial-use-rights)
+  - [What You Can Do](#what-you-can-do)
+    - [✅ Allowed Activities](#-allowed-activities)
+    - [📋 Examples of Commercial Use](#-examples-of-commercial-use)
+  - [What You Cannot Do](#what-you-cannot-do)
+    - [❌ Prohibited Activities](#-prohibited-activities)
+- [📝 Attribution Requirements](#-attribution-requirements)
+  - [Required Attribution](#required-attribution)
+  - [Attribution Examples](#attribution-examples)
+    - [Example 1: iOS App](#example-1-ios-app)
+    - [Example 2: README.md](#example-2-readmemd)
+- [My Commercial App](#my-commercial-app)
+- [Dependencies](#dependencies)
+  - [iOS Testing Automation Framework](#ios-testing-automation-framework)
+- [License](#license)
+    - [Example 3: Package.swift](#example-3-packageswift)
+- [✅ Best Practices](#-best-practices)
+  - [1. Proper Attribution](#1-proper-attribution)
+  - [2. Version Management](#2-version-management)
+  - [3. Integration](#3-integration)
+  - [4. Documentation](#4-documentation)
+- [Testing Infrastructure](#testing-infrastructure)
+  - [Framework Information](#framework-information)
+  - [Features Used](#features-used)
+  - [Attribution](#attribution)
+- [🎯 Use Cases](#-use-cases)
+  - [Enterprise Applications](#enterprise-applications)
+  - [SaaS Platforms](#saas-platforms)
+  - [Mobile Applications](#mobile-applications)
+- [⚠️ Limitations](#-limitations)
+  - [No Warranty](#no-warranty)
+  - [Recommendations](#recommendations)
+- [🆘 Support](#-support)
+  - [Community Support](#community-support)
+  - [Commercial Support](#commercial-support)
+  - [Contact Information](#contact-information)
+<!-- TOC END -->
+
+
 <div align="center">
 
 **Guidelines for using iOS Testing Automation Framework in commercial applications**

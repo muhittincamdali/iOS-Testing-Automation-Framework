@@ -1,5 +1,27 @@
 # Test Framework API
 
+<!-- TOC START -->
+## Table of Contents
+- [Test Framework API](#test-framework-api)
+- [Overview](#overview)
+- [Core Test Framework](#core-test-framework)
+  - [Test Manager](#test-manager)
+  - [Test Case](#test-case)
+  - [Test Suite](#test-suite)
+- [Test Runner](#test-runner)
+  - [Test Runner Implementation](#test-runner-implementation)
+- [Test Configuration](#test-configuration)
+  - [Configuration Management](#configuration-management)
+- [Test Coverage](#test-coverage)
+  - [Coverage Analysis](#coverage-analysis)
+- [Test Reporting](#test-reporting)
+  - [Report Generator](#report-generator)
+- [Testing](#testing)
+  - [Framework Tests](#framework-tests)
+- [Best Practices](#best-practices)
+<!-- TOC END -->
+
+
 ## Overview
 
 The Test Framework API provides the core testing infrastructure for iOS applications. It includes test case management, test execution, reporting, and integration with various testing tools.
