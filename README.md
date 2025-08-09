@@ -1,4 +1,5 @@
 # 🧪 iOS Testing Automation Framework
+[![CI](https://github.com/muhittincamdali/iOS-Testing-Automation-Framework/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/muhittincamdali/iOS-Testing-Automation-Framework/actions/workflows/ci.yml)
 
 <!-- TOC START -->
 ## Table of Contents
