@@ -1370,3 +1370,7 @@ SOFTWARE.
 **💫 Join our amazing community of developers!**
 
 </div>
+## 🌟 Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=muhittincamdali/iOS-Testing-Automation-Framework&type=Date)](https://star-history.com/#muhittincamdali/iOS-Testing-Automation-Framework&Date)
+
