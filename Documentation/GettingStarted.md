@@ -1,53 +1,35 @@
-# Getting Started Guide
+# 🚀 Getting Started
 
-<!-- TOC START -->
-## Table of Contents
-- [Getting Started Guide](#getting-started-guide)
-- [Overview](#overview)
-- [Architecture](#architecture)
-- [Installation (SPM)](#installation-spm)
-- [Quick Start](#quick-start)
-- [API Reference](#api-reference)
-- [Usage Examples](#usage-examples)
-- [Performance](#performance)
-- [Security](#security)
-- [Troubleshooting](#troubleshooting)
-- [FAQ](#faq)
-<!-- TOC END -->
+Welcome to our world-class iOS development framework! This guide will help you get started quickly and efficiently.
 
+## Prerequisites
 
-This guide provides step-by-step instructions for setting up and using the iOS Testing Automation Framework.
+- iOS 15.0+
+- Xcode 14.0+
+- Swift 5.9+
+- macOS 12.0+
 
-## Overview
-This document belongs to the iOS Testing Automation Framework repository. It explains goals, scope, and usage.
+## Installation
 
-## Architecture
-Clean Architecture and SOLID are followed to ensure maintainability and scalability.
+### Swift Package Manager
 
-## Installation (SPM)
+Add the following dependency to your `Package.swift`:
+
 ```swift
-.package(url: "https://github.com/owner/iOS-Testing-Automation-Framework.git", from: "1.0.0")
+dependencies: [
+    .package(url: "https://github.com/muhittincamdali/REPO_NAME.git", from: "1.0.0")
+]
 ```
 
-## Quick Start
-```swift
-// Add a concise example usage here
-```
+## Basic Setup
 
-## API Reference
-Describe key types and methods exposed by this module.
+1. Import the framework
+2. Initialize the main component
+3. Configure your settings
+4. Start using the features
 
-## Usage Examples
-Provide several concrete end-to-end examples.
+## Next Steps
 
-## Performance
-List relevant performance considerations.
-
-## Security
-Document security-sensitive areas and mitigations.
-
-## Troubleshooting
-Known issues and solutions.
-
-## FAQ
-Answer common questions with clear, actionable guidance.
+- Check out our [Examples](Examples/) folder
+- Read the [API Documentation](API.md)
+- Explore [Advanced Usage](AdvancedUsage.md)
