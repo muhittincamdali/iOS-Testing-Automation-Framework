@@ -1,5 +1,5 @@
 # 🧪 iOS Testing Automation Framework
-[![CI](https://github.com/muhittincamdali/iOS-Testing-Automation-Framework/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/muhittincamdali/iOS-Testing-Automation-Framework/actions/workflows/ci.yml)
+[![CI](https://github.com/muhittincamdali/iOS-Testing-Automation-Framework/actions/workflows/ci.yml/badge.svg)](https://github.com/muhittincamdali/iOS-Testing-Automation-Framework/actions/workflows/ci.yml)
 
 
 
@@ -26,7 +26,6 @@
 ![Parallel Execution](https://img.shields.io/badge/Parallel-Execution-673AB7?style=for-the-badge)
 ![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-673AB7?style=for-the-badge)
 ![Swift Package Manager](https://img.shields.io/badge/SPM-Dependencies-FF6B35?style=for-the-badge)
-![CocoaPods](https://img.shields.io/badge/CocoaPods-Supported-E91E63?style=for-the-badge)
 
 **🏆 World-Class iOS Testing Automation Framework**
 

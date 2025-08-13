@@ -1,0 +1,1238 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkPackageTests.xctest/Contents/MacOS/iOSTestingAutomationFrameworkPackageTests",
+      "packagePath" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework",
+      "productName" : "iOSTestingAutomationFrameworkPackageTests",
+      "testEntryPointPath" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Tests/LinuxMain.swift"
+    }
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.Logging-x86_64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/Logging.build/sources",
+      "importPath" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/checkouts/swift-log/Sources/Logging/Locks.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/checkouts/swift-log/Sources/Logging/LogHandler.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/checkouts/swift-log/Sources/Logging/Logging.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/checkouts/swift-log/Sources/Logging/MetadataProvider.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/Logging.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "Logging",
+      "moduleOutputPath" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/Modules/Logging.swiftmodule",
+      "objects" : [
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/Logging.build/Locks.swift.o",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/Logging.build/LogHandler.swift.o",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/Logging.build/Logging.swift.o",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/Logging.build/MetadataProvider.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-apple-macosx10.13",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j16",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/Logging.build/Logging-Swift.h",
+        "-swift-version",
+        "5",
+        "-enable-experimental-feature",
+        "StrictConcurrency=complete",
+        "-enable-upcoming-feature",
+        "MemberImportVisibility",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-suppress-warnings",
+        "-package-name",
+        "swift_log"
+      ],
+      "outputFileMapPath" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/Logging.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/Logging.build/Locks.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/Logging.build/LogHandler.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/Logging.build/Logging.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/Logging.build/MetadataProvider.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/Modules/Logging.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/checkouts/swift-log/Sources/Logging/Locks.swift",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/checkouts/swift-log/Sources/Logging/LogHandler.swift",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/checkouts/swift-log/Sources/Logging/Logging.swift",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/checkouts/swift-log/Sources/Logging/MetadataProvider.swift"
+      ],
+      "tempsPath" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/Logging.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.iOSTestingAutomationFramework-x86_64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/sources",
+      "importPath" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Core/MainFramework.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Core/PerformanceMonitor.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Core/SecurityValidator.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Core/TestAutomationFramework.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Core/TestCase.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Core/TestConfiguration.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Core/TestExecutor.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Core/TestOrchestrator.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Core/TestReportGenerator.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Core/TestReporter.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Core/VisualTestRunner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Framework/TestAutomationFramework.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/TestCase.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/TestFramework.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/TestSuite.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Testing/TestAutomationManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Testing/UITestSuite.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/iOS-Testing-Automation-Framework.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/Modules/Logging.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "iOSTestingAutomationFramework",
+      "moduleOutputPath" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/Modules/iOSTestingAutomationFramework.swiftmodule",
+      "objects" : [
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/MainFramework.swift.o",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/PerformanceMonitor.swift.o",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/SecurityValidator.swift.o",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/TestAutomationFramework.swift.o",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/TestCase.swift.o",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/TestConfiguration.swift.o",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/TestExecutor.swift.o",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/TestOrchestrator.swift.o",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/TestReportGenerator.swift.o",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/TestReporter.swift.o",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/VisualTestRunner.swift.o",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/TestAutomationFramework.swift.o",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/TestCase.swift.o",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/TestFramework.swift.o",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/TestSuite.swift.o",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/TestAutomationManager.swift.o",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/UITestSuite.swift.o",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/iOS-Testing-Automation-Framework.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-apple-macosx12.0",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j16",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/iOSTestingAutomationFramework-Swift.h",
+        "-swift-version",
+        "5",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "ios_testing_automation_framework"
+      ],
+      "outputFileMapPath" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/MainFramework.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/PerformanceMonitor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/SecurityValidator.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/TestAutomationFramework.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/TestCase.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/TestConfiguration.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/TestExecutor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/TestOrchestrator.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/TestReportGenerator.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/TestReporter.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/VisualTestRunner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/TestAutomationFramework.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/TestCase.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/TestFramework.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/TestSuite.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/TestAutomationManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/UITestSuite.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/iOS-Testing-Automation-Framework.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/Modules/iOSTestingAutomationFramework.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Core/MainFramework.swift",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Core/PerformanceMonitor.swift",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Core/SecurityValidator.swift",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Core/TestAutomationFramework.swift",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Core/TestCase.swift",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Core/TestConfiguration.swift",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Core/TestExecutor.swift",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Core/TestOrchestrator.swift",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Core/TestReportGenerator.swift",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Core/TestReporter.swift",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Core/VisualTestRunner.swift",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Framework/TestAutomationFramework.swift",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/TestCase.swift",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/TestFramework.swift",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/TestSuite.swift",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Testing/TestAutomationManager.swift",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Testing/UITestSuite.swift",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/iOS-Testing-Automation-Framework.swift"
+      ],
+      "tempsPath" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.iOSTestingAutomationFrameworkPackageTests-x86_64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkPackageTests.build/sources",
+      "importPath" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkPackageTests.derived/runner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/Modules/iOSTestingAutomationFrameworkTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkPackageTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "iOSTestingAutomationFrameworkPackageTests",
+      "moduleOutputPath" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/Modules/iOSTestingAutomationFrameworkPackageTests.swiftmodule",
+      "objects" : [
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkPackageTests.build/runner.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-apple-macosx12.0",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j16",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkPackageTests.build/iOSTestingAutomationFrameworkPackageTests-Swift.h",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "ios_testing_automation_framework"
+      ],
+      "outputFileMapPath" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkPackageTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/Modules/iOSTestingAutomationFrameworkPackageTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkPackageTests.derived/runner.swift"
+      ],
+      "tempsPath" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkPackageTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.iOSTestingAutomationFrameworkTests-x86_64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkTests.build/sources",
+      "importPath" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Tests/FrameworkTests/TestAutomationFrameworkTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Tests/FrameworkTests/TestConfigurationTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Tests/FrameworkTests/TestReporterTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Tests/FrameworkTests/UITestSuiteTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/Modules/iOSTestingAutomationFramework.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "iOSTestingAutomationFrameworkTests",
+      "moduleOutputPath" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/Modules/iOSTestingAutomationFrameworkTests.swiftmodule",
+      "objects" : [
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkTests.build/TestAutomationFrameworkTests.swift.o",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkTests.build/TestConfigurationTests.swift.o",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkTests.build/TestReporterTests.swift.o",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkTests.build/UITestSuiteTests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-apple-macosx14.0",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j16",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-swift-version",
+        "5",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "ios_testing_automation_framework"
+      ],
+      "outputFileMapPath" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkTests.build/TestAutomationFrameworkTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkTests.build/TestConfigurationTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkTests.build/TestReporterTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkTests.build/UITestSuiteTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/Modules/iOSTestingAutomationFrameworkTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Tests/FrameworkTests/TestAutomationFrameworkTests.swift",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Tests/FrameworkTests/TestConfigurationTests.swift",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Tests/FrameworkTests/TestReporterTests.swift",
+        "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Tests/FrameworkTests/UITestSuiteTests.swift"
+      ],
+      "tempsPath" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkTests.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "Logging" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "Logging",
+      "-package-name",
+      "swift_log",
+      "-incremental",
+      "-c",
+      "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/checkouts/swift-log/Sources/Logging/Locks.swift",
+      "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/checkouts/swift-log/Sources/Logging/LogHandler.swift",
+      "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/checkouts/swift-log/Sources/Logging/Logging.swift",
+      "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/checkouts/swift-log/Sources/Logging/MetadataProvider.swift",
+      "-I",
+      "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/Modules",
+      "-target",
+      "x86_64-apple-macosx10.13",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j16",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/Logging.build/Logging-Swift.h",
+      "-swift-version",
+      "5",
+      "-enable-experimental-feature",
+      "StrictConcurrency=complete",
+      "-enable-upcoming-feature",
+      "MemberImportVisibility",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-suppress-warnings",
+      "-package-name",
+      "swift_log",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "iOSTestingAutomationFramework" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "iOSTestingAutomationFramework",
+      "-package-name",
+      "ios_testing_automation_framework",
+      "-incremental",
+      "-c",
+      "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Core/MainFramework.swift",
+      "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Core/PerformanceMonitor.swift",
+      "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Core/SecurityValidator.swift",
+      "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Core/TestAutomationFramework.swift",
+      "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Core/TestCase.swift",
+      "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Core/TestConfiguration.swift",
+      "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Core/TestExecutor.swift",
+      "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Core/TestOrchestrator.swift",
+      "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Core/TestReportGenerator.swift",
+      "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Core/TestReporter.swift",
+      "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Core/VisualTestRunner.swift",
+      "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Framework/TestAutomationFramework.swift",
+      "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/TestCase.swift",
+      "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/TestFramework.swift",
+      "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/TestSuite.swift",
+      "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Testing/TestAutomationManager.swift",
+      "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Testing/UITestSuite.swift",
+      "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/iOS-Testing-Automation-Framework.swift",
+      "-I",
+      "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/Modules",
+      "-target",
+      "x86_64-apple-macosx12.0",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j16",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/iOSTestingAutomationFramework-Swift.h",
+      "-swift-version",
+      "5",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "ios_testing_automation_framework",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "iOSTestingAutomationFrameworkPackageTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "iOSTestingAutomationFrameworkPackageTests",
+      "-package-name",
+      "ios_testing_automation_framework",
+      "-incremental",
+      "-c",
+      "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkPackageTests.derived/runner.swift",
+      "-I",
+      "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/Modules",
+      "-target",
+      "x86_64-apple-macosx12.0",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j16",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkPackageTests.build/iOSTestingAutomationFrameworkPackageTests-Swift.h",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "ios_testing_automation_framework",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "iOSTestingAutomationFrameworkTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "iOSTestingAutomationFrameworkTests",
+      "-package-name",
+      "ios_testing_automation_framework",
+      "-incremental",
+      "-c",
+      "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Tests/FrameworkTests/TestAutomationFrameworkTests.swift",
+      "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Tests/FrameworkTests/TestConfigurationTests.swift",
+      "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Tests/FrameworkTests/TestReporterTests.swift",
+      "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Tests/FrameworkTests/UITestSuiteTests.swift",
+      "-I",
+      "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/Modules",
+      "-target",
+      "x86_64-apple-macosx14.0",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j16",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-swift-version",
+      "5",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "ios_testing_automation_framework",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "Logging" : [
+
+    ],
+    "iOSTestingAutomationFramework" : [
+      "Logging"
+    ],
+    "iOSTestingAutomationFrameworkPackageTests" : [
+      "iOSTestingAutomationFrameworkTests",
+      "iOSTestingAutomationFramework",
+      "Logging"
+    ],
+    "iOSTestingAutomationFrameworkTests" : [
+      "iOSTestingAutomationFramework",
+      "Logging"
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+    "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkPackageTests.derived/runner.swift" : {
+      "inputs" : [
+
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkPackageTests.derived/runner.swift"
+        }
+      ]
+    }
+  },
+  "traitConfiguration" : {
+    "enableAllTraits" : false
+  },
+  "writeCommands" : {
+    "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/Logging.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/checkouts/swift-log/Sources/Logging/Locks.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/checkouts/swift-log/Sources/Logging/LogHandler.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/checkouts/swift-log/Sources/Logging/Logging.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/checkouts/swift-log/Sources/Logging/MetadataProvider.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/Logging.build/sources"
+    },
+    "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Core/MainFramework.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Core/PerformanceMonitor.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Core/SecurityValidator.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Core/TestAutomationFramework.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Core/TestCase.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Core/TestConfiguration.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Core/TestExecutor.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Core/TestOrchestrator.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Core/TestReportGenerator.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Core/TestReporter.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Core/VisualTestRunner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Framework/TestAutomationFramework.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/TestCase.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/TestFramework.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/TestSuite.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Testing/TestAutomationManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/Testing/UITestSuite.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Sources/iOS-Testing-Automation-Framework.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/sources"
+    },
+    "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkPackageTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkPackageTests.derived/runner.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkPackageTests.build/sources"
+    },
+    "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkPackageTests.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/Logging.build/Locks.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/Logging.build/LogHandler.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/Logging.build/Logging.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/Logging.build/MetadataProvider.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/MainFramework.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/PerformanceMonitor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/SecurityValidator.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/TestAutomationFramework.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/TestAutomationFramework.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/TestAutomationManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/TestCase.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/TestCase.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/TestConfiguration.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/TestExecutor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/TestFramework.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/TestOrchestrator.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/TestReportGenerator.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/TestReporter.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/TestSuite.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/UITestSuite.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/VisualTestRunner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/iOS-Testing-Automation-Framework.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkTests.build/TestAutomationFrameworkTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkTests.build/TestConfigurationTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkTests.build/TestReporterTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkTests.build/UITestSuiteTests.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkPackageTests.product/Objects.LinkFileList"
+    },
+    "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Tests/FrameworkTests/TestAutomationFrameworkTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Tests/FrameworkTests/TestConfigurationTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Tests/FrameworkTests/TestReporterTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Tests/FrameworkTests/UITestSuiteTests.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkTests.build/sources"
+    },
+    "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}
