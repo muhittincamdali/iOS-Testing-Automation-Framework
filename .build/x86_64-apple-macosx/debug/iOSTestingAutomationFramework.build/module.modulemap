@@ -1,0 +1,4 @@
+module iOSTestingAutomationFramework {
+    header "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFramework.build/iOSTestingAutomationFramework-Swift.h"
+    requires objc
+}

@@ -1,0 +1,29 @@
+{
+  "": {
+    "swift-dependencies": "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkTests.build/master.swiftdeps"
+  },
+  "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Tests/FrameworkTests/TestAutomationFrameworkTests.swift": {
+    "dependencies": "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkTests.build/TestAutomationFrameworkTests.d",
+    "object": "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkTests.build/TestAutomationFrameworkTests.swift.o",
+    "swiftmodule": "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkTests.build/TestAutomationFrameworkTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkTests.build/TestAutomationFrameworkTests.swiftdeps"
+  },
+  "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Tests/FrameworkTests/TestConfigurationTests.swift": {
+    "dependencies": "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkTests.build/TestConfigurationTests.d",
+    "object": "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkTests.build/TestConfigurationTests.swift.o",
+    "swiftmodule": "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkTests.build/TestConfigurationTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkTests.build/TestConfigurationTests.swiftdeps"
+  },
+  "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Tests/FrameworkTests/TestReporterTests.swift": {
+    "dependencies": "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkTests.build/TestReporterTests.d",
+    "object": "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkTests.build/TestReporterTests.swift.o",
+    "swiftmodule": "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkTests.build/TestReporterTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkTests.build/TestReporterTests.swiftdeps"
+  },
+  "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/Tests/FrameworkTests/UITestSuiteTests.swift": {
+    "dependencies": "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkTests.build/UITestSuiteTests.d",
+    "object": "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkTests.build/UITestSuiteTests.swift.o",
+    "swiftmodule": "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkTests.build/UITestSuiteTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/muhittincamdali/Desktop/Cursor Projects/GitHub/iOS-Testing-Automation-Framework/.build/x86_64-apple-macosx/debug/iOSTestingAutomationFrameworkTests.build/UITestSuiteTests.swiftdeps"
+  }
+}
