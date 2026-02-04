@@ -51,6 +51,20 @@
 
 ---
 
+## 📋 Table of Contents
+
+- [Why This Framework?](#-why-this-framework)
+- [Quick Start](#-quick-start)
+- [Features](#-features)
+- [Test Pyramid](#-test-pyramid)
+- [Examples](#-examples)
+- [CI Integration](#-ci-integration)
+- [Contributing](#contributing)
+- [License](#license)
+- [Star History](#-star-history)
+
+---
+
 ## 🎯 Why This Framework?
 
 Testing iOS apps shouldn't be painful. This framework gives you battle-tested patterns, utilities, and infrastructure to write tests that are:
