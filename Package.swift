@@ -25,7 +25,7 @@ let package = Package(
             dependencies: [
                 .product(name: "Logging", package: "swift-log"),
             ],
-            path: "Sources"),
+            path: "Sources/iOSTestingAutomationFramework"),
         
         .testTarget(
             name: "iOSTestingAutomationFrameworkTests",

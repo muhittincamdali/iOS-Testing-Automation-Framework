@@ -1,6 +1,7 @@
+ef466fb36bc0701deda5106d9a4571d572605aab	not-for-merge	branch 'SLG-0006-task-local-logger-proposal' of https://github.com/apple/swift-log
 b20468db884f9c65fc0399860531fbf8ee1a349b	not-for-merge	branch 'fb-gha-action' of https://github.com/apple/swift-log
 82818e74862476e2abe1b7d3d153f0ec992c9265	not-for-merge	branch 'gh-pages' of https://github.com/apple/swift-log
-1be2c17b808c404e31436d114adf448a3eba5872	not-for-merge	branch 'main' of https://github.com/apple/swift-log
+ca6118469893201380f29a4d67feb68bcb44fa25	not-for-merge	branch 'main' of https://github.com/apple/swift-log
 eba9b323b5ba542c119ff17382a4ce737bcdc0b8	not-for-merge	branch 'swift-log-0.0' of https://github.com/apple/swift-log
 9788e74ef235a50419ba661b3d3b970a0f5c6280	not-for-merge	branch 'tomerd-patch-1' of https://github.com/apple/swift-log
 f1a88bda3e81e0d19f98dc63fe340df0dcb433f9	not-for-merge	branch 'tomerd-patch-2' of https://github.com/apple/swift-log
@@ -27,7 +28,7 @@ f97e6881301a733ce2a35e91bf6c70a32e637597	not-for-merge	'refs/pull/117/head' of h
 dc76d99c28a3256ba05adc03c99dc331d5c417bb	not-for-merge	'refs/pull/119/head' of https://github.com/apple/swift-log
 c319385f599a2ff1363cf982114ec1e4af640fe5	not-for-merge	'refs/pull/12/head' of https://github.com/apple/swift-log
 c0824743d91f110e4584dd827dddd8bc2bfe0fbc	not-for-merge	'refs/pull/120/head' of https://github.com/apple/swift-log
-0376822e8e35e5ae0944c0d7eb4988f158edb234	not-for-merge	'refs/pull/120/merge' of https://github.com/apple/swift-log
+36330c67e389e13194d7459325bfca14a484d9b8	not-for-merge	'refs/pull/120/merge' of https://github.com/apple/swift-log
 1796dd2b4d2b534463a4a77ddf111013f89fd33e	not-for-merge	'refs/pull/121/head' of https://github.com/apple/swift-log
 df4fe0e6748033d4abd4840b5084b128e8370d76	not-for-merge	'refs/pull/122/head' of https://github.com/apple/swift-log
 eed8d6ec08e272ca65bf32b028203adcaa485cfb	not-for-merge	'refs/pull/123/head' of https://github.com/apple/swift-log
@@ -178,12 +179,12 @@ f73f56935641849b96d533ff4cd31930b964cf1f	not-for-merge	'refs/pull/308/head' of h
 379524b468e950984d468837458e81109ce3c05c	not-for-merge	'refs/pull/312/head' of https://github.com/apple/swift-log
 868b61a5c4834e120218da49a55f1cc8048148e6	not-for-merge	'refs/pull/313/head' of https://github.com/apple/swift-log
 565e5fc9e626c482084cf2f5e1d09abe7a57ef31	not-for-merge	'refs/pull/315/head' of https://github.com/apple/swift-log
-3f610650453bd013a2a02d5bbf23d63ee361ec1e	not-for-merge	'refs/pull/315/merge' of https://github.com/apple/swift-log
+80a5159b93ba1d9b2c2ea22c36ee3917aa396929	not-for-merge	'refs/pull/315/merge' of https://github.com/apple/swift-log
 1f6393cb5947caa25781555a96253b482d931415	not-for-merge	'refs/pull/316/head' of https://github.com/apple/swift-log
 eff05cc205eebc6ff4bdad060b744d43b9722f49	not-for-merge	'refs/pull/317/head' of https://github.com/apple/swift-log
 8bcbf20e620045ffe2121646a17361363d2028c5	not-for-merge	'refs/pull/318/head' of https://github.com/apple/swift-log
 1bc7650aebe5f7173e20b2caa3a789b6275eab53	not-for-merge	'refs/pull/322/head' of https://github.com/apple/swift-log
-e580fc1032fd80c37b5370c5b41f0807fa67b7cd	not-for-merge	'refs/pull/322/merge' of https://github.com/apple/swift-log
+761269ff9094389f0ebef97bd6114cb1b71920fd	not-for-merge	'refs/pull/322/merge' of https://github.com/apple/swift-log
 ecca3d2f6256131eed1e522ae276396001a43f1a	not-for-merge	'refs/pull/323/head' of https://github.com/apple/swift-log
 1bbf4bdd11d1a682e520019c0a5fe6029e5b3942	not-for-merge	'refs/pull/324/head' of https://github.com/apple/swift-log
 3161c6422c80a15418ba002f20589a98cbc3f59b	not-for-merge	'refs/pull/325/head' of https://github.com/apple/swift-log
@@ -226,16 +227,102 @@ b137d518838c4b057273a8beb0be0e57236ef23d	not-for-merge	'refs/pull/366/head' of h
 97fdcfe63bab6d70c00109037cb1de90baa346f9	not-for-merge	'refs/pull/367/head' of https://github.com/apple/swift-log
 1434918163a2bb22d5a68f19503f852443b70342	not-for-merge	'refs/pull/368/head' of https://github.com/apple/swift-log
 991b39f222cf253a60bac93b4baeb79a85adb3bb	not-for-merge	'refs/pull/369/head' of https://github.com/apple/swift-log
+8bf585c67ca631c82dea10dd9092f08cd2806e20	not-for-merge	'refs/pull/370/head' of https://github.com/apple/swift-log
+c1b1848e305a9d211ba967cf2a0194c168420dc9	not-for-merge	'refs/pull/371/head' of https://github.com/apple/swift-log
+8f1c2afebfb69f5863d417fc973c64e4d24c6971	not-for-merge	'refs/pull/373/head' of https://github.com/apple/swift-log
+39e14910f60ab26cdd87b43d7a05a56dfed2b727	not-for-merge	'refs/pull/375/head' of https://github.com/apple/swift-log
+90e40e1303ba167f0ec18ca1c8b38a0215ca2d73	not-for-merge	'refs/pull/376/head' of https://github.com/apple/swift-log
+459b8f2f20162daf141a9e73cdcf4561648f51ae	not-for-merge	'refs/pull/379/head' of https://github.com/apple/swift-log
+dca52eb040ad6e120e0d06f27091e76101b2df55	not-for-merge	'refs/pull/380/head' of https://github.com/apple/swift-log
+69eb15e96dfdc38a6e0ad8b7894aac0fb68b394d	not-for-merge	'refs/pull/381/head' of https://github.com/apple/swift-log
+d36686fe82f92146546b082c66e30a6d353bd782	not-for-merge	'refs/pull/382/head' of https://github.com/apple/swift-log
+895afd3fc8b5a29c9e5f24628480d377cc8a3140	not-for-merge	'refs/pull/383/head' of https://github.com/apple/swift-log
+9e105c0368dbca9cd0fe07afd85530c4b653471d	not-for-merge	'refs/pull/384/head' of https://github.com/apple/swift-log
+07883dc863e57fa2d75562186b8a058406d3b53d	not-for-merge	'refs/pull/385/head' of https://github.com/apple/swift-log
+ce31afbe33783f19d5344108c4e8e0c603f3ad7e	not-for-merge	'refs/pull/386/head' of https://github.com/apple/swift-log
+e4b99492d936d535dcbfca602649b27b0e958c45	not-for-merge	'refs/pull/387/head' of https://github.com/apple/swift-log
+c55657ef7d25c28d8ad02e3d441abf060043419d	not-for-merge	'refs/pull/388/head' of https://github.com/apple/swift-log
+ef3846b71da0ff85b62b992006449b0259147654	not-for-merge	'refs/pull/389/head' of https://github.com/apple/swift-log
 b4d5569210b85fe0ee3aeea1475a1011385bcc17	not-for-merge	'refs/pull/39/head' of https://github.com/apple/swift-log
+9a8c50753a41b413017bc9e09366620f4a59e80b	not-for-merge	'refs/pull/390/head' of https://github.com/apple/swift-log
+8cd77fae447476337e32d9a5f8d80b316280db6d	not-for-merge	'refs/pull/391/head' of https://github.com/apple/swift-log
+b28d2dd1753db5c27371768f6e82e67de66b4b66	not-for-merge	'refs/pull/392/head' of https://github.com/apple/swift-log
+f29c242a45d2240a53fa3ad2f827f32139d3d0a7	not-for-merge	'refs/pull/393/head' of https://github.com/apple/swift-log
+57fdf92c4d6a89346e048211d3809929a2fd5f9f	not-for-merge	'refs/pull/394/head' of https://github.com/apple/swift-log
+02b41ff5c52164f6bf76b02a8e4e2b669a3992a8	not-for-merge	'refs/pull/395/head' of https://github.com/apple/swift-log
+19aee086ce7b2d8e40634f7921f14a17dce8bacd	not-for-merge	'refs/pull/396/head' of https://github.com/apple/swift-log
+f5cfaa1786dac02895da1e3583c4a50851961f19	not-for-merge	'refs/pull/397/head' of https://github.com/apple/swift-log
+da7d3f3a70d5ff5f6e2544308c11b9a8258cebe1	not-for-merge	'refs/pull/398/head' of https://github.com/apple/swift-log
+846f2f3f25e0b12fbade47fbe6ab1c3b79c85a0e	not-for-merge	'refs/pull/399/head' of https://github.com/apple/swift-log
 87b4d385601b930f061a6bf5a1cce612e8c3fadd	not-for-merge	'refs/pull/4/head' of https://github.com/apple/swift-log
 23196680ea5253e687939974d26af234fd5a66fe	not-for-merge	'refs/pull/40/head' of https://github.com/apple/swift-log
+94d68c4c119e8542464eb29f87aae28c18b0fb48	not-for-merge	'refs/pull/400/head' of https://github.com/apple/swift-log
+bc661039a87b81be8e57fb1d2e9bcec70923e94e	not-for-merge	'refs/pull/401/head' of https://github.com/apple/swift-log
+2a5580ef048eb6b74be1a3f1921aebcb52828ae5	not-for-merge	'refs/pull/403/head' of https://github.com/apple/swift-log
+da160921ea4e68a3d533853e125d0070a98a18f5	not-for-merge	'refs/pull/404/head' of https://github.com/apple/swift-log
+8e8c4c076db76f1f9da9c0bbad1b13c9ac9a7535	not-for-merge	'refs/pull/405/head' of https://github.com/apple/swift-log
+95fb31440679039522f90dced389d0a8fd979547	not-for-merge	'refs/pull/406/head' of https://github.com/apple/swift-log
+241c7ccbfa522ba894f6cbf871aa8e0b0e486fd8	not-for-merge	'refs/pull/408/head' of https://github.com/apple/swift-log
 10ca7d4bf758558bf7615f20cf7693d8d2d223dd	not-for-merge	'refs/pull/41/head' of https://github.com/apple/swift-log
+75a6e9931dcba001783b572ed10cff2c8c7a47ca	not-for-merge	'refs/pull/411/head' of https://github.com/apple/swift-log
+64fc0217092708e3252029769f222f6f18f89d33	not-for-merge	'refs/pull/412/head' of https://github.com/apple/swift-log
+8c52a66add0f244727700161fb0388287662e35f	not-for-merge	'refs/pull/413/head' of https://github.com/apple/swift-log
+51c4c2f9075d8ad7f527917f40ecf313168f1c29	not-for-merge	'refs/pull/414/head' of https://github.com/apple/swift-log
+6ba7d77625fe711eedabd0c947e06e4d96880f60	not-for-merge	'refs/pull/415/head' of https://github.com/apple/swift-log
+6265af653e1df38f1691015f66e181b3b46ffb3e	not-for-merge	'refs/pull/416/head' of https://github.com/apple/swift-log
+909c04e5e1dc06086524bfee21bb476eab9ee122	not-for-merge	'refs/pull/417/head' of https://github.com/apple/swift-log
+3279aff726766ea409b23e5364d11b46ccb69805	not-for-merge	'refs/pull/418/head' of https://github.com/apple/swift-log
+cdd212493225e7f18520312ff673aa4f7dde9395	not-for-merge	'refs/pull/419/head' of https://github.com/apple/swift-log
 782b3909f24d565f4145b526bfde5b1b995a353d	not-for-merge	'refs/pull/42/head' of https://github.com/apple/swift-log
+00cdad2a011160f9b53236722638fd144777f250	not-for-merge	'refs/pull/420/head' of https://github.com/apple/swift-log
+b879330b4ac67ecf7db2704b4abcc76482e9a8c9	not-for-merge	'refs/pull/422/head' of https://github.com/apple/swift-log
+09298d5df4e45208ff6a999d8f720e554c7b1168	not-for-merge	'refs/pull/423/head' of https://github.com/apple/swift-log
+540321e00ceb5b5649a952ae01a0268027795b61	not-for-merge	'refs/pull/424/head' of https://github.com/apple/swift-log
+817faaf3167fe71967909c37471177b6fb85fabe	not-for-merge	'refs/pull/425/head' of https://github.com/apple/swift-log
+18906f1f3605b8cc6ccf5dfd5b2cf7706993e329	not-for-merge	'refs/pull/426/head' of https://github.com/apple/swift-log
+a19e1b6831d1baaa1735927d2ec1bbe3b60e7a49	not-for-merge	'refs/pull/427/head' of https://github.com/apple/swift-log
+55f5bfb92fd5b8a06557597d809fff2797c17bab	not-for-merge	'refs/pull/428/head' of https://github.com/apple/swift-log
+4774cf9eda27f4f6d2af929bcb80ea3fb3e34b95	not-for-merge	'refs/pull/429/head' of https://github.com/apple/swift-log
 40f287ca8c5dd5953fe5d52e8688f5317ef995a8	not-for-merge	'refs/pull/43/head' of https://github.com/apple/swift-log
+706237e590cc0bf27d6a96053040e2f6d04dc42e	not-for-merge	'refs/pull/430/head' of https://github.com/apple/swift-log
+fdf05b15f30ca293913eb64510421ebc57bc05c4	not-for-merge	'refs/pull/431/head' of https://github.com/apple/swift-log
+8bc6d29e064181cb66211403fa809c6e969cc298	not-for-merge	'refs/pull/431/merge' of https://github.com/apple/swift-log
+63eb626ecbb566ed71069a991e0603fbfe71875f	not-for-merge	'refs/pull/433/head' of https://github.com/apple/swift-log
+6071abcb9d4f01a354e2d9a360de7a90611c15bb	not-for-merge	'refs/pull/434/head' of https://github.com/apple/swift-log
+f06fa8b02df492c4a3777b7b16f5af0cb4121911	not-for-merge	'refs/pull/435/head' of https://github.com/apple/swift-log
+efc96373ff13dd745dee71773d544980712e413a	not-for-merge	'refs/pull/436/head' of https://github.com/apple/swift-log
+4b210facb91d0ab13aba48f339001ff104cfc40d	not-for-merge	'refs/pull/437/head' of https://github.com/apple/swift-log
+6e313c8d628b0e980010316ab39665d4cd2af7b7	not-for-merge	'refs/pull/438/head' of https://github.com/apple/swift-log
+b689899b400c1226977d998b18f437ad4d81959d	not-for-merge	'refs/pull/439/head' of https://github.com/apple/swift-log
 16720aae64b30c943281a4225a66db8b9e54f51b	not-for-merge	'refs/pull/44/head' of https://github.com/apple/swift-log
+32835be8a25d963488c97f7cb913d43a21902bf6	not-for-merge	'refs/pull/440/head' of https://github.com/apple/swift-log
+80521aba8fa22f371aab3563c5e21f55fac8c4cd	not-for-merge	'refs/pull/442/head' of https://github.com/apple/swift-log
+b1f36382ca8a9e5b658f1c340fbafe5110e80950	not-for-merge	'refs/pull/444/head' of https://github.com/apple/swift-log
+eb1273ba5670ae6cd5b3fa6618b3ac21ef6b3fb9	not-for-merge	'refs/pull/445/head' of https://github.com/apple/swift-log
+5989da7bf423e3bf8a8e8cb7ffaef69b0a0b426f	not-for-merge	'refs/pull/446/head' of https://github.com/apple/swift-log
+4b00786d40ddab613048acebbbfab0fdbb2afa7c	not-for-merge	'refs/pull/447/head' of https://github.com/apple/swift-log
+31ff4d560d02929a0bd97163ce15e87529c3cb37	not-for-merge	'refs/pull/448/head' of https://github.com/apple/swift-log
+95b825061f76e974db5ee74b81d7aa8056d6f919	not-for-merge	'refs/pull/449/head' of https://github.com/apple/swift-log
 8622c0b51edef98e9e20195cf280f5b29369cd29	not-for-merge	'refs/pull/45/head' of https://github.com/apple/swift-log
+b8f01516d633087bc181363c12a2f1efca0b6476	not-for-merge	'refs/pull/451/head' of https://github.com/apple/swift-log
+89e1dea17620cf2de7dd577841e5397a0942a489	not-for-merge	'refs/pull/452/head' of https://github.com/apple/swift-log
+cfbf6329de23b660c83a8f245186bf2a76c4eebc	not-for-merge	'refs/pull/453/head' of https://github.com/apple/swift-log
+b8a069e08e9e0b51b913d1f1bb0579c591bd2fed	not-for-merge	'refs/pull/454/head' of https://github.com/apple/swift-log
+b8274f42b2ea41dfb42609b3e3fcdcd203ab6d6e	not-for-merge	'refs/pull/455/head' of https://github.com/apple/swift-log
+0a71105fb8440605ebae64da4ee930b735745daa	not-for-merge	'refs/pull/455/merge' of https://github.com/apple/swift-log
+635dab1701f715eccc2c9c890c234ecdc26e0ac4	not-for-merge	'refs/pull/457/head' of https://github.com/apple/swift-log
+948b39a5611a0ce82057966367997e93534f39d3	not-for-merge	'refs/pull/458/head' of https://github.com/apple/swift-log
+ebbc5253fe80812e5a5aa412f689ac90998be4c3	not-for-merge	'refs/pull/459/head' of https://github.com/apple/swift-log
+1d10a9991eea342e07c9ffa648d269f63541ac98	not-for-merge	'refs/pull/459/merge' of https://github.com/apple/swift-log
 ba9e73fa6781ffc9882e4e6261c82ee3e80c6eac	not-for-merge	'refs/pull/46/head' of https://github.com/apple/swift-log
+532e61c5c617d63b7509302678a02b2b47f6c5c6	not-for-merge	'refs/pull/460/head' of https://github.com/apple/swift-log
+91e1d706a7ea30bcff7465a73ef3fa3650f030d2	not-for-merge	'refs/pull/461/head' of https://github.com/apple/swift-log
+33c780613b3f0d6638bfa1c752eab54868cacbd8	not-for-merge	'refs/pull/464/head' of https://github.com/apple/swift-log
+b29c6a0016b1d57eb20024c7ce9202e60d1e961d	not-for-merge	'refs/pull/465/head' of https://github.com/apple/swift-log
+af965ac4afde88b22358e9e8134570a5a679c08f	not-for-merge	'refs/pull/466/head' of https://github.com/apple/swift-log
+f282e7d122e4180d794ff87aa20ba351430a38fd	not-for-merge	'refs/pull/469/head' of https://github.com/apple/swift-log
 6b055abaadeaf6e59b7b4dd19357b40903fa8f0b	not-for-merge	'refs/pull/47/head' of https://github.com/apple/swift-log
+38c02848a6ca90f029f1b4b33b4e48265d895c85	not-for-merge	'refs/pull/471/head' of https://github.com/apple/swift-log
 4e4015d45e14be87cc83f53bf079a22e5717d930	not-for-merge	'refs/pull/48/head' of https://github.com/apple/swift-log
 0759d40d8bb5e6dc69c09b6facacc605adfadf9e	not-for-merge	'refs/pull/49/head' of https://github.com/apple/swift-log
 c9e1566586f1ea06526d15fc90275db7db942388	not-for-merge	'refs/pull/5/head' of https://github.com/apple/swift-log
@@ -281,6 +368,14 @@ eba9b323b5ba542c119ff17382a4ce737bcdc0b8	not-for-merge	tag '0.0.0' of https://gi
 a64dd7dafc06bcecc43ec4dff0d71ef797247456	not-for-merge	tag '1.0.0' of https://github.com/apple/swift-log
 f4240bf022a69815241a883c03645444b58ac553	not-for-merge	tag '1.1.0' of https://github.com/apple/swift-log
 e8aabbe95db22e064ad42f1a4a9f8982664c70ed	not-for-merge	tag '1.1.1' of https://github.com/apple/swift-log
+8fb4e7147d24498c94ef5b8a55b26f709ccd981f	not-for-merge	tag '1.10.0' of https://github.com/apple/swift-log
+bbd81b6725ae874c69e9b8c8804d462356b55523	not-for-merge	tag '1.10.1' of https://github.com/apple/swift-log
+8c0f217f01000dd30f60d6e536569ad4e74291f9	not-for-merge	tag '1.11.0' of https://github.com/apple/swift-log
+5073617dac96330a486245e4c0179cb0a6fd2256	not-for-merge	tag '1.12.0' of https://github.com/apple/swift-log
+a012e0ad8a8a72de92b0e008c81a9b793f70e73a	not-for-merge	tag '1.12.1' of https://github.com/apple/swift-log
+7dc6101ae4dbe95cd3bc9cebad3b7cf8e49a7a63	not-for-merge	tag '1.13.0' of https://github.com/apple/swift-log
+2aed77ae5ec9a86d8fe42c12275e4c2653a286ee	not-for-merge	tag '1.13.1' of https://github.com/apple/swift-log
+92448c359f00ebe36ae97d3bd9086f13c7692b5a	not-for-merge	tag '1.13.2' of https://github.com/apple/swift-log
 74d7b91ceebc85daf387ebb206003f78813f71aa	not-for-merge	tag '1.2.0' of https://github.com/apple/swift-log
 bd4e972dc0c1716352f42614a9cf13b5bf2e7c2a	not-for-merge	tag '1.3.0' of https://github.com/apple/swift-log
 3f88aa2fc5ad7a66d01fae951e9dda7e9be50dc0	not-for-merge	tag '1.4.0' of https://github.com/apple/swift-log
@@ -298,3 +393,8 @@ b3a637307772d20291d78a5b7a0d4204d9b1e981	not-for-merge	tag '1.6.0' of https://gi
 96a2f8a0fa41e9e09af4585e2724c4e825410b91	not-for-merge	tag '1.6.2' of https://github.com/apple/swift-log
 3d8596ed08bd13520157f0355e35caed215ffbfa	not-for-merge	tag '1.6.3' of https://github.com/apple/swift-log
 0541b6f77cb3f12b8718483f07f7d0b0ac6ed3df	not-for-merge	tag '1.6.4' of https://github.com/apple/swift-log
+ca538143e2dc2b5996c34b9322a1ed9def1d7747	not-for-merge	tag '1.7.0' of https://github.com/apple/swift-log
+b1fa4ef41fe21b13120c034854042d12c43f66b2	not-for-merge	tag '1.7.1' of https://github.com/apple/swift-log
+bc386b95f2a16ccd0150a8235e7c69eab2b866ca	not-for-merge	tag '1.8.0' of https://github.com/apple/swift-log
+7ee16e465622412764b0ff0c1301801dc71b8f61	not-for-merge	tag '1.9.0' of https://github.com/apple/swift-log
+2778fd4e5a12a8aaa30a3ee8285f4ce54c5f3181	not-for-merge	tag '1.9.1' of https://github.com/apple/swift-log

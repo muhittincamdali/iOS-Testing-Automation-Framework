@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/iOSTestingAutomationFrameworkPackageTests.build/primary.swiftdeps"
+  },
+  "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/iOSTestingAutomationFrameworkPackageTests.derived/runner.swift": {
+    "dependencies": "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/iOSTestingAutomationFrameworkPackageTests.build/runner.d",
+    "object": "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/iOSTestingAutomationFrameworkPackageTests.build/runner.swift.o",
+    "swiftmodule": "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/iOSTestingAutomationFrameworkPackageTests.build/runner~partial.swiftmodule",
+    "swift-dependencies": "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/iOSTestingAutomationFrameworkPackageTests.build/runner.swiftdeps",
+    "diagnostics": "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/iOSTestingAutomationFrameworkPackageTests.build/runner.dia"
+  }
+}

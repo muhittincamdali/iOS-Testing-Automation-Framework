@@ -527,6 +527,30 @@ iOS-Testing-Automation-Framework/
 
 ---
 
+## 🤖 Features
+
+- **Page Object & Robot Pattern** support built-in.
+- **Smart Waiting** mechanisms for flaky UI elements.
+- **Automatic Screenshots** on failure.
+- **BBD-style Syntax** with Swift DSL.
+- **CI-Ready** reporting and logs.
+
+### ⚔️ The Robot Pattern: UI Testing Re-imagined
+Stop writing fragile UI tests. Use our declarative Robot Pattern to create maintainable, readable automation.
+
+```swift
+func testLoginSuccess() {
+    app.on(LoginRobot.self)
+       .enter(username: "admin")
+       .enter(password: "123456")
+       .tapLogin()
+       .on(HomeRobot.self)
+       .verify(welcomeMessage: "Welcome back!")
+}
+```
+
+---
+
 ## 📋 Requirements
 
 | Requirement | Version |
