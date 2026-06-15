@@ -2,6 +2,13 @@
   "": {
     "swift-dependencies": "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/iOSTestingAutomationFramework.build/primary.swiftdeps"
   },
+  "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/Sources/iOSTestingAutomationFramework/Accessibility/AccessibilityAuditor.swift": {
+    "dependencies": "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/iOSTestingAutomationFramework.build/AccessibilityAuditor.d",
+    "object": "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/iOSTestingAutomationFramework.build/AccessibilityAuditor.swift.o",
+    "swiftmodule": "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/iOSTestingAutomationFramework.build/AccessibilityAuditor~partial.swiftmodule",
+    "swift-dependencies": "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/iOSTestingAutomationFramework.build/AccessibilityAuditor.swiftdeps",
+    "diagnostics": "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/iOSTestingAutomationFramework.build/AccessibilityAuditor.dia"
+  },
   "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/Sources/iOSTestingAutomationFramework/Core/TestingCore.swift": {
     "dependencies": "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/iOSTestingAutomationFramework.build/TestingCore.d",
     "object": "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/iOSTestingAutomationFramework.build/TestingCore.swift.o",
@@ -9,12 +16,26 @@
     "swift-dependencies": "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/iOSTestingAutomationFramework.build/TestingCore.swiftdeps",
     "diagnostics": "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/iOSTestingAutomationFramework.build/TestingCore.dia"
   },
+  "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/Sources/iOSTestingAutomationFramework/Resilience/SelfHealingEngine.swift": {
+    "dependencies": "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/iOSTestingAutomationFramework.build/SelfHealingEngine.d",
+    "object": "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/iOSTestingAutomationFramework.build/SelfHealingEngine.swift.o",
+    "swiftmodule": "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/iOSTestingAutomationFramework.build/SelfHealingEngine~partial.swiftmodule",
+    "swift-dependencies": "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/iOSTestingAutomationFramework.build/SelfHealingEngine.swiftdeps",
+    "diagnostics": "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/iOSTestingAutomationFramework.build/SelfHealingEngine.dia"
+  },
   "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/Sources/iOSTestingAutomationFramework/Robot/Robot.swift": {
     "dependencies": "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/iOSTestingAutomationFramework.build/Robot.d",
     "object": "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/iOSTestingAutomationFramework.build/Robot.swift.o",
     "swiftmodule": "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/iOSTestingAutomationFramework.build/Robot~partial.swiftmodule",
     "swift-dependencies": "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/iOSTestingAutomationFramework.build/Robot.swiftdeps",
     "diagnostics": "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/iOSTestingAutomationFramework.build/Robot.dia"
+  },
+  "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/Sources/iOSTestingAutomationFramework/Visual/VisualRegressionEngine.swift": {
+    "dependencies": "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/iOSTestingAutomationFramework.build/VisualRegressionEngine.d",
+    "object": "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/iOSTestingAutomationFramework.build/VisualRegressionEngine.swift.o",
+    "swiftmodule": "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/iOSTestingAutomationFramework.build/VisualRegressionEngine~partial.swiftmodule",
+    "swift-dependencies": "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/iOSTestingAutomationFramework.build/VisualRegressionEngine.swiftdeps",
+    "diagnostics": "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/iOSTestingAutomationFramework.build/VisualRegressionEngine.dia"
   },
   "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/Sources/iOSTestingAutomationFramework/iOSTestingAutomationFramework.swift": {
     "dependencies": "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/iOSTestingAutomationFramework.build/iOSTestingAutomationFramework.d",

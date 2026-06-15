@@ -155,11 +155,23 @@
       "inputs" : [
         {
           "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/Sources/iOSTestingAutomationFramework/Accessibility/AccessibilityAuditor.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/Sources/iOSTestingAutomationFramework/Core/TestingCore.swift"
         },
         {
           "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/Sources/iOSTestingAutomationFramework/Resilience/SelfHealingEngine.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/Sources/iOSTestingAutomationFramework/Robot/Robot.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/Sources/iOSTestingAutomationFramework/Visual/VisualRegressionEngine.swift"
         },
         {
           "kind" : "file",
@@ -182,8 +194,11 @@
       "moduleName" : "iOSTestingAutomationFramework",
       "moduleOutputPath" : "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/Modules/iOSTestingAutomationFramework.swiftmodule",
       "objects" : [
+        "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/iOSTestingAutomationFramework.build/AccessibilityAuditor.swift.o",
         "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/iOSTestingAutomationFramework.build/TestingCore.swift.o",
+        "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/iOSTestingAutomationFramework.build/SelfHealingEngine.swift.o",
         "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/iOSTestingAutomationFramework.build/Robot.swift.o",
+        "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/iOSTestingAutomationFramework.build/VisualRegressionEngine.swift.o",
         "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/iOSTestingAutomationFramework.build/iOSTestingAutomationFramework.swift.o"
       ],
       "otherArguments" : [
@@ -239,11 +254,23 @@
       "outputs" : [
         {
           "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/iOSTestingAutomationFramework.build/AccessibilityAuditor.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/iOSTestingAutomationFramework.build/TestingCore.swift.o"
         },
         {
           "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/iOSTestingAutomationFramework.build/SelfHealingEngine.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/iOSTestingAutomationFramework.build/Robot.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/iOSTestingAutomationFramework.build/VisualRegressionEngine.swift.o"
         },
         {
           "kind" : "file",
@@ -256,8 +283,11 @@
       ],
       "prepareForIndexing" : false,
       "sources" : [
+        "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/Sources/iOSTestingAutomationFramework/Accessibility/AccessibilityAuditor.swift",
         "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/Sources/iOSTestingAutomationFramework/Core/TestingCore.swift",
+        "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/Sources/iOSTestingAutomationFramework/Resilience/SelfHealingEngine.swift",
         "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/Sources/iOSTestingAutomationFramework/Robot/Robot.swift",
+        "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/Sources/iOSTestingAutomationFramework/Visual/VisualRegressionEngine.swift",
         "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/Sources/iOSTestingAutomationFramework/iOSTestingAutomationFramework.swift"
       ],
       "tempsPath" : "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/iOSTestingAutomationFramework.build",
@@ -562,8 +592,11 @@
       "-package-name",
       "ios_testing_automation_framework",
       "-c",
+      "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/Sources/iOSTestingAutomationFramework/Accessibility/AccessibilityAuditor.swift",
       "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/Sources/iOSTestingAutomationFramework/Core/TestingCore.swift",
+      "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/Sources/iOSTestingAutomationFramework/Resilience/SelfHealingEngine.swift",
       "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/Sources/iOSTestingAutomationFramework/Robot/Robot.swift",
+      "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/Sources/iOSTestingAutomationFramework/Visual/VisualRegressionEngine.swift",
       "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/Sources/iOSTestingAutomationFramework/iOSTestingAutomationFramework.swift",
       "-I",
       "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/Modules",
@@ -814,11 +847,23 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/Sources/iOSTestingAutomationFramework/Accessibility/AccessibilityAuditor.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/Sources/iOSTestingAutomationFramework/Core/TestingCore.swift"
         },
         {
           "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/Sources/iOSTestingAutomationFramework/Resilience/SelfHealingEngine.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/Sources/iOSTestingAutomationFramework/Robot/Robot.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/Sources/iOSTestingAutomationFramework/Visual/VisualRegressionEngine.swift"
         },
         {
           "kind" : "file",
@@ -866,11 +911,23 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/iOSTestingAutomationFramework.build/AccessibilityAuditor.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/iOSTestingAutomationFramework.build/Robot.swift.o"
         },
         {
           "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/iOSTestingAutomationFramework.build/SelfHealingEngine.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/iOSTestingAutomationFramework.build/TestingCore.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/muhittincamdali/Desktop/Claude Projects/GitHub/iOS-Testing-Automation-Framework/.build/arm64-apple-macosx/debug/iOSTestingAutomationFramework.build/VisualRegressionEngine.swift.o"
         },
         {
           "kind" : "file",
