@@ -43,7 +43,16 @@ jobs:
           TEST_RUNNER_TESTING_AUTOMATION_REPORT_DIR="$RUNNER_TEMP/reports" \
             xcodebuild test -project AutomationShowcase.xcodeproj -scheme AutomationShowcase \
             -destination "id=$udid" -skipPackagePluginValidation -skipMacroValidation \
+            -resultBundlePath "$RUNNER_TEMP/AutomationShowcase.xcresult" \
             CODE_SIGNING_ALLOWED=NO -quiet
+
+      # typeSecret pastes passwords so that XCTest's own activity titles never contain them.
+      # The result bundle holds every activity and failure message, so it is searched together
+      # with the reports for the passwords the UI tests enter.
+      - name: Check that the passwords stay out of the results
+        run: |
+          scripts/check-secrets-in-results.sh "$RUNNER_TEMP/AutomationShowcase.xcresult" \
+            "$RUNNER_TEMP/reports" correct-horse-battery not-the-password
 
       - name: Job summary
         if: always()

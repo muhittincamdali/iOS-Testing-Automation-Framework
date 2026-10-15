@@ -22,7 +22,9 @@ final class ShopFlowTests: ShowcaseTestCase {
         robot.signIn(email: Self.email, password: "not-the-password")
         robot.assertLabel(of: robot.error, equals: "Wrong email or password.")
 
-        // typeSecret registered the password, so every message and report masks it.
+        // typeSecret registered the password, so every message and report masks it, and
+        // pasted it, so XCTest's own log of the step does not contain it either. CI checks the
+        // result bundle and the reports with scripts/check-secrets-in-results.sh.
         XCTAssertEqual(TestingAutomation.redactor.redact("typed not-the-password"), "typed ••••")
     }
 
