@@ -41,7 +41,46 @@ struct RedactorTests {
     func encodedForms() {
         let redactor = Redactor(secrets: ["p@ss/w\"rd"], mask: "#", masksCommonPatterns: false)
         #expect(redactor.redact("GET /login?pw=p%40ss%2Fw%22rd") == "GET /login?pw=#")
-        #expect(redactor.redact(##"{"pw":"p@ss\/w\"rd"}"##) == ##"{"pw":"#"}"##)
+        #expect(redactor.redact(##"{"pw":"p@ss\/w\"rd"}"##) == ###"{"pw":"#"}"###)
+    }
+
+    @Test("masks a secret wherever a URL encoder put it", arguments: ["p@ss-wörd_1.x", "pässword", "a b+c&d=e/f?g#h"])
+    func urlEncoders(secret: String) throws {
+        let redactor = Redactor(secrets: [secret], mask: "#", masksCommonPatterns: false)
+        var components = try #require(URLComponents(string: "https://example.com/sign-in"))
+        components.queryItems = [URLQueryItem(name: "pw", value: secret)]
+        let query = try #require(components.percentEncodedQuery)
+        #expect(!redactor.redact(query).contains(try #require(query.split(separator: "=").last)))
+        #expect(redactor.redact(query) == "pw=#")
+
+        var pathComponents = URLComponents()
+        pathComponents.path = "/" + secret
+        #expect(redactor.redact(pathComponents.percentEncodedPath) == "/#")
+
+        for allowed in [CharacterSet.urlQueryAllowed, .urlPathAllowed, .urlUserAllowed, .urlPasswordAllowed, .urlFragmentAllowed, .alphanumerics] {
+            let encoded = try #require(secret.addingPercentEncoding(withAllowedCharacters: allowed))
+            #expect(redactor.redact("x \(encoded) y") == "x # y")
+            #expect(redactor.redact("x \(lowercasedHex(encoded)) y") == "x # y")
+        }
+    }
+
+    @Test("masks form encoding, where a space is a plus")
+    func formEncoding() {
+        let redactor = Redactor(secrets: ["correct horse+battery"], mask: "#", masksCommonPatterns: false)
+        #expect(redactor.redact("user=ada&pw=correct+horse%2Bbattery") == "user=ada&pw=#")
+        #expect(redactor.redact("pw=correct%20horse%2bbattery") == "pw=#")
+    }
+
+    @Test("masks ASCII-only JSON escapes and decomposed percent-encoding")
+    func unicodeEscapes() throws {
+        let redactor = Redactor(secrets: ["pässword"], mask: "#", masksCommonPatterns: false)
+        #expect(redactor.redact(##"{"pw":"p\u00e4ssword"}"##) == ##"{"pw":"#"}"##)
+        #expect(redactor.redact(##"{"pw":"p\u00E4ssword"}"##) == ##"{"pw":"#"}"##)
+        let decomposed = try #require("pa\u{308}ssword".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed))
+        #expect(decomposed == "pa%CC%88ssword")
+        #expect(redactor.redact("pw=\(decomposed)") == "pw=#")
+        let json = try String(decoding: JSONEncoder().encode(["pw": "pässword/1"]), as: UTF8.self)
+        #expect(Redactor(secrets: ["pässword/1"], mask: "#", masksCommonPatterns: false).redact(json) == ##"{"pw":"#"}"##)
     }
 
     @Test("matches composed and decomposed Unicode")
@@ -256,4 +295,22 @@ final class XMLNode {
             stack.last?.text += string
         }
     }
+}
+
+/// `%C3%B6` → `%c3%b6`, as some encoders write percent-escapes.
+private func lowercasedHex(_ encoded: String) -> String {
+    var result = ""
+    var remaining = 0
+    for character in encoded {
+        if character == "%" {
+            remaining = 2
+            result.append(character)
+        } else if remaining > 0 {
+            remaining -= 1
+            result += character.lowercased()
+        } else {
+            result.append(character)
+        }
+    }
+    return result
 }

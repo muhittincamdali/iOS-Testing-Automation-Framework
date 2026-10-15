@@ -79,7 +79,9 @@ every UI helper, and merges the useful parts of iOSTestingTools, which is being 
 - Spies, the healing log, the audit's ancestor tracking and edit-distance work have fixed upper
   bounds.
 - Typed secrets and credential patterns are masked in activity names, failure messages,
-  `junit.xml` and `summary.md`, including percent-encoded, JSON-escaped and overlapping forms.
+  `junit.xml` and `summary.md`. A secret is also found where a URL or form encoder
+  percent-encoded it (hex in either case), where it was JSON-escaped (also as `\u00e4`), in
+  composed and decomposed Unicode, and where it overlaps another secret.
 
 ## [1.0.0] - 2026-02-02
 

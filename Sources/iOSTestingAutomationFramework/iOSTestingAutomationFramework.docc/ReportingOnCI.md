@@ -52,7 +52,9 @@ and durations never print as `nan` or a negative number, so the file always pars
 Every report and robot message passes through a ``Redactor``. It masks:
 
 - secrets registered with ``TestingAutomation/registerSecret(_:)`` (``Robot`` registers
-  everything typed with `typeSecret(_:into:)`), also in percent-encoded and JSON-escaped form;
+  everything typed with `typeSecret(_:into:)`), also where they were percent-encoded (by
+  `URLComponents`, `addingPercentEncoding` with any URL character set, or form encoding with
+  `+` for a space; hex in either case) or JSON-escaped, including `\u00e4` escapes;
 - values after `password=`, `token:`, `api_key=`, `secret=` and similar keys, and the token
   after `Bearer`.
 
