@@ -136,13 +136,13 @@ public struct Redactor: Sendable, Hashable {
 
     private static func replace(_ ranges: [Range<String.Index>], in text: String, with mask: String) -> String {
         var output = ""
-        var cursor = text.startIndex
+        var position = text.startIndex
         for range in ranges {
-            output += text[cursor..<range.lowerBound]
+            output += text[position..<range.lowerBound]
             output += mask
-            cursor = range.upperBound
+            position = range.upperBound
         }
-        output += text[cursor...]
+        output += text[position...]
         return output
     }
 }
