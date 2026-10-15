@@ -53,9 +53,12 @@ final class VisualRegressionTests: ShowcaseTestCase {
         XCTAssertGreaterThan(bounds.x, baseline.width / 2, "Only the right-hand price column should change")
 
         if let output = screenshotDirectory {
-            try baseline.writePNG(to: output.appendingPathComponent("catalog-\(colorScheme).png"))
+            // The catalog ends well above the bottom of the screen; keep the top 1.6 widths.
+            let height = baseline.width * 16 / 10
+            try top(of: baseline, height: height).writePNG(to: output.appendingPathComponent("catalog-\(colorScheme).png"))
             let difference = try XCTUnwrap(comparison.differenceImage)
-            try sideBySide([baseline, changed, difference], gap: 48, colorScheme: colorScheme)
+            let images = try [baseline, changed, difference].map { try top(of: $0, height: height) }
+            try sideBySide(images, gap: 48, colorScheme: colorScheme)
                 .writePNG(to: output.appendingPathComponent("visual-diff-\(colorScheme).png"))
         }
     }
@@ -67,6 +70,12 @@ final class VisualRegressionTests: ShowcaseTestCase {
         let top = app.navigationBars.firstMatch.frame.minY
         return PixelRect(CGRect(x: 0, y: 0, width: app.frame.width, height: max(top, 0)), scale: scale)
             ?? PixelRect(x: 0, y: 0, width: imageWidth, height: 0)
+    }
+
+    /// The top `height` rows of `image`.
+    private func top(of image: Bitmap, height: Int) throws -> Bitmap {
+        let rows = min(height, image.height)
+        return try Bitmap(width: image.width, height: rows, bytes: Array(image.bytes.prefix(image.width * rows * 4)))
     }
 
     /// Places images next to each other on the app's background color.
