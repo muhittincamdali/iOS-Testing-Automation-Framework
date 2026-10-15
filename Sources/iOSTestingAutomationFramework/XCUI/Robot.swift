@@ -91,9 +91,15 @@ open class Robot {
         return self
     }
 
-    /// Types a password or token. The text is registered with
+    /// Enters a password or token. The text is registered with
     /// ``TestingAutomation/registerSecret(_:)`` first, so it is masked in activity names,
     /// failure messages and reports.
+    ///
+    /// On iOS and macOS the text is pasted (⌘V) instead of typed, because XCTest names its own
+    /// typing activity after the typed text, and that name reaches the test log and the result
+    /// bundle. The text goes on the pasteboard for this device only and the pasteboard is
+    /// emptied after the paste; what was on it before is not restored. On other platforms the
+    /// text is typed, and XCTest's own activity shows its first characters.
     @discardableResult
     public func typeSecret(
         _ text: String,
@@ -103,8 +109,16 @@ open class Robot {
     ) -> Self {
         TestingAutomation.registerSecret(text)
         let site = CallSite(fileID: fileID, filePath: filePath, line: line, column: column)
-        activity("Type a secret into \(element.shortDescription)") {
-            enter(text, into: element, timeout: timeout, at: site)
+        activity("Enter a secret into \(element.shortDescription)") {
+            guard SecretPasteboard.isAvailable else {
+                enter(text, into: element, timeout: timeout, at: site)
+                return
+            }
+            guard waitUntilHittable(element, timeout: timeout, action: "enter a secret into", at: site) else { return }
+            element.tap()
+            if SecretPasteboard.paste(text, into: element, timeout: timeout ?? defaultTimeout) == false {
+                recordFailure("Pasting a secret into \(element.shortDescription) did not change its value", at: site)
+            }
         }
         return self
     }

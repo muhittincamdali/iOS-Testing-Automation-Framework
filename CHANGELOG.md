@@ -78,6 +78,10 @@ every UI helper, and merges the useful parts of iOSTestingTools, which is being 
   and out-of-range values instead of trapping.
 - Spies, the healing log, the audit's ancestor tracking and edit-distance work have fixed upper
   bounds.
+- `Robot.typeSecret(_:into:)` pastes the secret (⌘V) instead of typing it, because XCTest
+  names its own typing activity after the typed text, and that name reaches the test log and
+  the result bundle. The pasteboard holds the secret for this device only and is emptied after
+  the paste.
 - Decoding `SampleStatistics` goes through its validating initializer and recomputes the
   statistics from the measurements, so data without a finite measurement throws instead of
   making `percentile(_:)` crash.

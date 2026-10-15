@@ -33,6 +33,12 @@ extension XCUIElement {
         wait(for: NSPredicate(format: "exists == true AND value == %@", value), timeout: timeout)
     }
 
+    /// Waits until the element's `value`, as text, is no longer `value`.
+    @MainActor
+    func waitForValueChange(from value: String, timeout: TimeInterval) -> Bool {
+        wait(for: NSPredicate(format: "exists == true AND value != %@", value), timeout: timeout)
+    }
+
     @MainActor
     private func wait(for predicate: NSPredicate, timeout: TimeInterval) -> Bool {
         // XCTNSPredicateExpectation first evaluates after about a second, so a condition that

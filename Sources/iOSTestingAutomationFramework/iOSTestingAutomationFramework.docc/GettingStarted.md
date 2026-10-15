@@ -70,7 +70,8 @@ final class SignInTests: XCTestCase {
 ```
 
 `typeSecret(_:into:)` registers the password with ``TestingAutomation/registerSecret(_:)``, so
-it is masked in the test report.
+it is masked in the test report, and pastes it instead of typing it, so XCTest's own log of the
+step does not show it either.
 
 ## Write a unit test
 

@@ -52,13 +52,18 @@ and durations never print as `nan` or a negative number, so the file always pars
 Every report and robot message passes through a ``Redactor``. It masks:
 
 - secrets registered with ``TestingAutomation/registerSecret(_:)`` (``Robot`` registers
-  everything typed with `typeSecret(_:into:)`), also where they were percent-encoded (by
+  everything entered with `typeSecret(_:into:)`), also where they were percent-encoded (by
   `URLComponents`, `addingPercentEncoding` with any URL character set, or form encoding with
   `+` for a space; hex in either case) or JSON-escaped, including `\u00e4` escapes;
 - values after `password=`, `token:`, `api_key=`, `secret=` and similar keys, and the token
   after `Bearer`. A quoted value is masked up to its closing quote, spaces included.
 
 Overlapping matches are merged before masking, so no part of a secret stays visible.
+
+`typeSecret(_:into:)` pastes the secret instead of typing it, because XCTest names its own
+typing activity after the typed text, and that name goes to the test log and the result bundle,
+which no redactor reaches. The secret goes on the pasteboard for the device only, and the
+pasteboard is emptied after the paste.
 
 ## Find flaky tests
 
