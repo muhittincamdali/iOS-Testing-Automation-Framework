@@ -1,4 +1,4 @@
-<!-- i18n-source: README.md@96afd867c60fbff34acfc396cf2b8d69f0d0f58f status=reviewed -->
+<!-- i18n-source: README.md@f538d6e779afe3cd003645722b6571419027f952 status=reviewed -->
 <!-- brand:start -->
 
 <p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/muhittincamdali/iOS-Testing-Automation-Framework/main/.github/brand/banner-es-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/muhittincamdali/iOS-Testing-Automation-Framework/main/.github/brand/banner-es-light.svg"><img src="https://raw.githubusercontent.com/muhittincamdali/iOS-Testing-Automation-Framework/main/.github/brand/banner-es-light.svg" alt="iOS Testing Automation: Robots, localizadores autorreparables, diferencias de capturas, accesibilidad e informes de CI para XCUITest."></picture></p>
@@ -50,7 +50,7 @@ en un registro de CI. El paquete no tiene dependencias y se añade solo a tus ta
 - **Salida lista para CI** — `junit.xml` y un resumen de trabajo en Markdown para cada paquete de pruebas, con las
   contraseñas y los tokens escritos ocultos, además de un análisis de pruebas inestables a lo largo de varias ejecuciones.
 - **Reglas probadas** — la autorreparación, la auditoría, la comparación de imágenes, los informes y el enmascarado de datos
-  son Swift puro y están cubiertos por 112 pruebas de Swift Testing en macOS y en un simulador de iPhone; 9 pruebas de interfaz
+  son Swift puro y están cubiertos por 118 pruebas de Swift Testing en macOS y en un simulador de iPhone; 9 pruebas de interfaz
   de la [app de ejemplo](Examples/AutomationShowcase) ejecutan la capa de XCUITest de extremo a extremo en CI.
 
 ### Qué incluye
@@ -202,7 +202,8 @@ app.on(SignInRobot.self)
 ```
 
 `typeSecret(_:into:)` registra la contraseña, de modo que se oculta como `••••` en los nombres de los pasos, los mensajes de fallo
-y los informes.
+y los informes. Pega la contraseña en lugar de escribirla, porque XCTest registra el texto escrito
+en sus propios pasos, adonde no llega ningún enmascarador. Después se vacía el portapapeles.
 
 ### Mantén las pruebas funcionando cuando cambia un identificador
 
@@ -371,8 +372,9 @@ Xcode 27.
   disponible, así que depender de él rompería todos los targets de pruebas de interfaz. Las aserciones pensadas para pruebas
   unitarias lanzan errores, y ambos frameworks los notifican como fallos.
 - La entrada que viene de fuera de la prueba está acotada: los tamaños de imagen se comprueban antes de decodificar, los nombres
-  de instantáneas se convierten en nombres de archivo seguros, los números NaN e infinitos se limitan en lugar de convertirse, y toda
-  lista que crece con la entrada tiene un límite.
+  de instantáneas se convierten en nombres de archivo seguros, los números NaN e infinitos se limitan en lugar de convertirse, y los
+  espías, el registro de reparaciones, la auditoría y la búsqueda por distancia de edición tienen límites
+  fijos. Los resultados de prueba recopilados y los secretos registrados se conservan completos durante la ejecución.
 - CI ejecuta `swift test` en macOS y `xcodebuild test` en un simulador de iPhone, compila para iOS y
   macOS, ejecuta las pruebas de interfaz de la app de ejemplo y publica la documentación de DocC.
 

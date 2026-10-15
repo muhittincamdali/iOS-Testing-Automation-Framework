@@ -1,4 +1,4 @@
-<!-- i18n-source: README.md@96afd867c60fbff34acfc396cf2b8d69f0d0f58f status=reviewed -->
+<!-- i18n-source: README.md@f538d6e779afe3cd003645722b6571419027f952 status=reviewed -->
 <!-- brand:start -->
 
 <p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/muhittincamdali/iOS-Testing-Automation-Framework/main/.github/brand/banner-de-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/muhittincamdali/iOS-Testing-Automation-Framework/main/.github/brand/banner-de-light.svg"><img src="https://raw.githubusercontent.com/muhittincamdali/iOS-Testing-Automation-Framework/main/.github/brand/banner-de-light.svg" alt="iOS Testing Automation: Robots, selbstheilende Locators, Screenshot-Diffs, Barrierefreiheitsprüfung und CI-Berichte für XCUITest."></picture></p>
@@ -50,7 +50,7 @@ schwer zu lesen sind. Das Paket hat keine Abhängigkeiten und kommt nur in deine
 - **Ausgabe für CI** — `junit.xml` und eine Markdown-Jobzusammenfassung für jedes Test-Bundle, wobei eingegebene
   Passwörter und Tokens maskiert werden, dazu eine Analyse instabiler Tests über mehrere Läufe.
 - **Getestete Regeln** — der Healer, die Prüfung, der Bildvergleich, die Berichte und die Maskierung
-  sind reines Swift und werden von 112 Swift-Testing-Tests auf macOS und einem iPhone-Simulator abgedeckt; 9 UI-Tests
+  sind reines Swift und werden von 118 Swift-Testing-Tests auf macOS und einem iPhone-Simulator abgedeckt; 9 UI-Tests
   in der [Beispiel-App](Examples/AutomationShowcase) führen die XCUITest-Schicht in CI durchgängig aus.
 
 ### Was enthalten ist
@@ -202,7 +202,9 @@ app.on(SignInRobot.self)
 ```
 
 `typeSecret(_:into:)` registriert das Passwort, sodass es in Schrittnamen, Fehlermeldungen
-und Berichten als `••••` maskiert wird.
+und Berichten als `••••` maskiert wird. Es fügt das Passwort ein, statt es zu tippen, weil XCTest
+getippten Text in seinen eigenen Schritten protokolliert, die kein Maskierer erreicht. Danach wird
+die Zwischenablage geleert.
 
 ### Tests lauffähig halten, wenn sich ein Identifier ändert
 
@@ -371,8 +373,9 @@ Xcode 27 entwickelt.
   eine Abhängigkeit davon würde also jedes UI-Test-Target brechen. Assertions für Unit-Tests
   werfen Fehler, die beide Frameworks als Fehlschlag melden.
 - Eingaben von außerhalb des Tests sind begrenzt: Bildgrößen werden vor dem Dekodieren geprüft, Snapshot-Namen
-  werden zu sicheren Dateinamen, NaN und unendliche Zahlen werden begrenzt statt konvertiert, und jede
-  Liste, die mit der Eingabe wächst, hat ein Limit.
+  werden zu sicheren Dateinamen, NaN und unendliche Zahlen werden begrenzt statt konvertiert, und
+  Spies, das Heilungsprotokoll, das Audit und die Suche nach Editierdistanz haben feste Grenzen. Die
+  gesammelten Testergebnisse und die registrierten Geheimnisse bleiben für den ganzen Lauf vollständig erhalten.
 - CI führt `swift test` auf macOS und `xcodebuild test` auf einem iPhone-Simulator aus, baut für iOS und
   macOS, führt die UI-Tests der Beispiel-App aus und veröffentlicht die DocC-Dokumentation.
 

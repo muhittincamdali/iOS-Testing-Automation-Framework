@@ -1,4 +1,4 @@
-<!-- i18n-source: README.md@96afd867c60fbff34acfc396cf2b8d69f0d0f58f status=reviewed -->
+<!-- i18n-source: README.md@f538d6e779afe3cd003645722b6571419027f952 status=reviewed -->
 <!-- brand:start -->
 
 <p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/muhittincamdali/iOS-Testing-Automation-Framework/main/.github/brand/banner-tr-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/muhittincamdali/iOS-Testing-Automation-Framework/main/.github/brand/banner-tr-light.svg"><img src="https://raw.githubusercontent.com/muhittincamdali/iOS-Testing-Automation-Framework/main/.github/brand/banner-tr-light.svg" alt="iOS Testing Automation: XCUITest için robotlar, kendini onaran bulucular, görüntü farkı, erişilebilirlik denetimi ve CI raporları."></picture></p>
@@ -51,7 +51,7 @@ yalnızca test hedeflerinize eklenir.
 - **CI'a hazır çıktı** — her test paketi için `junit.xml` ve Markdown iş özeti; yazılan parolalar ve
   belirteçler maskelenir. Ayrıca birkaç çalıştırma üzerinden kararsız test analizi yapılır.
 - **Test edilmiş kurallar** — onarıcı, denetim, görüntü karşılaştırması, raporlar ve maskeleme düz
-  Swift'tir; macOS'ta ve bir iPhone simülatöründe 112 Swift Testing testiyle kapsanır.
+  Swift'tir; macOS'ta ve bir iPhone simülatöründe 118 Swift Testing testiyle kapsanır.
   [Örnek uygulamadaki](Examples/AutomationShowcase) 9 arayüz testi, XCUITest katmanını CI'da baştan
   sona çalıştırır.
 
@@ -204,7 +204,9 @@ app.on(SignInRobot.self)
 ```
 
 `typeSecret(_:into:)` parolayı kaydeder; böylece parola adım adlarında, hata iletilerinde ve
-raporlarda `••••` olarak maskelenir.
+raporlarda `••••` olarak maskelenir. Parolayı yazmak yerine yapıştırır, çünkü XCTest yazılan
+metni kendi adımlarına kaydeder ve bu adımlara hiçbir maskeleyici ulaşamaz. Pano ardından
+boşaltılır.
 
 ### Bir tanımlayıcı değiştiğinde testleri çalışır tutun
 
@@ -374,7 +376,9 @@ geliştirilmektedir.
   hata fırlatır; iki çatı da bunu başarısızlık olarak raporlar.
 - Test dışından gelen girdi sınırlandırılmıştır: görüntü boyutları çözülmeden önce denetlenir,
   snapshot adları güvenli dosya adlarına dönüştürülür, NaN ve sonsuz sayılar dönüştürülmek yerine
-  sınırlanır ve girdiyle büyüyen her listenin bir sınırı vardır.
+  sınırlanır; spy'ların, iyileştirme günlüğünün, denetimin ve düzenleme mesafesi aramasının sabit
+  sınırları vardır. Toplanan test sonuçları ve kaydedilen gizli değerler çalıştırma boyunca
+  eksiksiz tutulur.
 - CI, macOS'ta `swift test`, bir iPhone simülatöründe `xcodebuild test` çalıştırır; iOS ve macOS için
   derler, örnek uygulamanın arayüz testlerini çalıştırır ve DocC dokümantasyonunu yayımlar.
 

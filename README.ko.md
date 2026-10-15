@@ -1,4 +1,4 @@
-<!-- i18n-source: README.md@96afd867c60fbff34acfc396cf2b8d69f0d0f58f status=reviewed -->
+<!-- i18n-source: README.md@f538d6e779afe3cd003645722b6571419027f952 status=reviewed -->
 <!-- brand:start -->
 
 <p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/muhittincamdali/iOS-Testing-Automation-Framework/main/.github/brand/banner-ko-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/muhittincamdali/iOS-Testing-Automation-Framework/main/.github/brand/banner-ko-light.svg"><img src="https://raw.githubusercontent.com/muhittincamdali/iOS-Testing-Automation-Framework/main/.github/brand/banner-ko-light.svg" alt="iOS Testing Automation: XCUITest용 로봇, 자가 복구 로케이터, 스크린샷 비교, 접근성 감사, CI 보고서."></picture></p>
@@ -35,7 +35,7 @@ iOS와 macOS 앱의 UI 테스트와 단위 테스트를 위한 Swift 패키지�
 - **눈으로 확인하는 시각적 회귀** — 스크린샷과 SwiftUI 뷰를 기준 PNG와 비교합니다. 허용 오차, 무시할 영역(시계, 날짜), 바뀐 픽셀이 모두 파란색으로 표시되는 차이 이미지를 지원합니다.
 - **실행할 때마다 접근성 점검** — 호출 한 번으로 화면에서 레이블이 없는 컨트롤, 44 × 44 포인트보다 작은 터치 대상, 요소 종류를 반복하는 레이블, 중복된 식별자를 검사하며, Apple의 `performAccessibilityAudit()`도 추가할 수 있습니다.
 - **CI에 바로 쓰는 출력** — 테스트 번들마다 `junit.xml`과 Markdown 작업 요약을 만들고, 입력한 비밀번호와 토큰은 가려집니다. 여러 번 실행한 결과로 불안정한 테스트도 분석합니다.
-- **검증된 규칙** — 복구, 감사, 이미지 비교, 보고서, 마스킹은 순수 Swift이며, macOS와 iPhone 시뮬레이터에서 Swift Testing 테스트 112개로 검증합니다. [예제 앱](Examples/AutomationShowcase)의 UI 테스트 9개는 CI에서 XCUITest 계층을 처음부터 끝까지 실행합니다.
+- **검증된 규칙** — 복구, 감사, 이미지 비교, 보고서, 마스킹은 순수 Swift이며, macOS와 iPhone 시뮬레이터에서 Swift Testing 테스트 118개로 검증합니다. [예제 앱](Examples/AutomationShowcase)의 UI 테스트 9개는 CI에서 XCUITest 계층을 처음부터 끝까지 실행합니다.
 
 ### 포함된 항목
 
@@ -178,7 +178,7 @@ app.on(SignInRobot.self)
     .assertCart(contains: 2)
 ```
 
-`typeSecret(_:into:)`는 비밀번호를 등록하므로 단계 이름, 실패 메시지, 보고서에서 `••••`로 가려집니다.
+`typeSecret(_:into:)`는 비밀번호를 등록하므로 단계 이름, 실패 메시지, 보고서에서 `••••`로 가려집니다. XCTest는 입력한 텍스트를 자체 단계에 기록하고 그곳에는 어떤 마스킹도 닿지 않으므로, 비밀번호를 입력하지 않고 붙여 넣습니다. 붙여 넣은 뒤 페이스트보드는 비워집니다.
 
 ### 식별자가 바뀌어도 테스트 유지하기
 
@@ -328,7 +328,7 @@ XCUITest 도우미에는 UI 테스트 타깃이 필요하며, 나머지 도우�
 - `Sources/iOSTestingAutomationFramework/`에는 영역마다 폴더가 하나씩 있습니다: `Core`, `Reporting`, `Waiting`, `Resilience`, `Locators`, `Accessibility`, `Visual`, `Doubles`, `Fixtures`, `Performance`, `XCUI`.
 - `XCUI`를 제외한 모든 것은 순수 Swift입니다. 규칙(복구, 감사, 이미지 비교, 보고서, 마스킹)은 `ElementDescriptor`와 `Bitmap` 같은 값을 대상으로 동작하므로, 단위 테스트가 실행 중인 앱 없이도 이를 검증할 수 있습니다. `XCUI`는 얇은 계층으로, 화면의 스냅샷 한 장을 디스크립터로 바꾸고 XCTest를 통해 실패를 보고합니다.
 - 이 패키지는 Swift Testing을 가져오지 않습니다. Xcode는 UI 테스트 번들을 Swift Testing 없이 빌드하므로, 이를 의존하면 모든 UI 테스트 타깃이 깨집니다. 단위 테스트용 어서션은 오류를 던지며, 두 프레임워크 모두 이를 실패로 보고합니다.
-- 테스트 외부에서 들어오는 입력에는 한도가 있습니다. 이미지 크기는 디코딩 전에 확인하고, 스냅샷 이름은 안전한 파일 이름으로 바꾸며, NaN과 무한대 값은 변환하지 않고 범위 안으로 제한하고, 입력에 따라 늘어나는 모든 목록에는 상한이 있습니다.
+- 테스트 외부에서 들어오는 입력에는 한도가 있습니다. 이미지 크기는 디코딩 전에 확인하고, 스냅샷 이름은 안전한 파일 이름으로 바꾸며, NaN과 무한대 값은 변환하지 않고 범위 안으로 제한하며, 스파이, 복구 로그, 감사, 편집 거리 탐색에는 고정 상한이 있습니다. 수집한 테스트 결과와 등록한 비밀 값은 실행하는 동안 모두 유지됩니다.
 - CI는 macOS에서 `swift test`를, iPhone 시뮬레이터에서 `xcodebuild test`를 실행하고, iOS와 macOS용으로 빌드하며, 예제 앱의 UI 테스트를 실행하고 DocC 문서를 게시합니다.
 
 로컬에서 테스트를 실행하려면 다음과 같이 하세요.

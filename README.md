@@ -47,7 +47,7 @@ in a CI log. The package has no dependencies and goes in your test targets only.
 - **CI-ready output** — `junit.xml` and a Markdown job summary for each test bundle, with typed
   passwords and tokens masked, plus a flaky-test analysis over several runs.
 - **Tested rules** — the healer, the audit, the image comparison, the reports and the redaction
-  are plain Swift, covered by 112 Swift Testing tests on macOS and an iPhone simulator; 9 UI tests
+  are plain Swift, covered by 118 Swift Testing tests on macOS and an iPhone simulator; 9 UI tests
   in the [example app](Examples/AutomationShowcase) run the XCUITest layer end to end on CI.
 
 ### What's included
@@ -199,7 +199,8 @@ app.on(SignInRobot.self)
 ```
 
 `typeSecret(_:into:)` registers the password, so it is masked as `••••` in step names, failure
-messages and reports.
+messages and reports. It pastes the password instead of typing it, because XCTest logs typed
+text in its own steps, which no redactor reaches. The pasteboard is emptied afterwards.
 
 ### Keep tests working when an identifier changes
 
@@ -369,8 +370,9 @@ Xcode 27.
   unavailable, so a dependency on it would break every UI test target. Assertions meant for unit
   tests throw, which both frameworks report as a failure.
 - Input from outside the test is bounded: image sizes are checked before decoding, snapshot names
-  become safe file names, NaN and infinite numbers are clamped instead of converted, and every
-  list that grows with input has a limit.
+  become safe file names, NaN and infinite numbers are clamped instead of converted, and spies,
+  the healing log, the audit and the edit-distance search have fixed limits. The collected test
+  results and the registered secrets are kept in full for the length of the run.
 - CI runs `swift test` on macOS, `xcodebuild test` on an iPhone simulator, builds for iOS and
   macOS, runs the example app's UI tests and publishes the DocC documentation.
 

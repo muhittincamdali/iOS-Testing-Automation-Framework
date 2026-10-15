@@ -1,4 +1,4 @@
-<!-- i18n-source: README.md@96afd867c60fbff34acfc396cf2b8d69f0d0f58f status=reviewed -->
+<!-- i18n-source: README.md@f538d6e779afe3cd003645722b6571419027f952 status=reviewed -->
 <!-- brand:start -->
 
 <p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/muhittincamdali/iOS-Testing-Automation-Framework/main/.github/brand/banner-pt-BR-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/muhittincamdali/iOS-Testing-Automation-Framework/main/.github/brand/banner-pt-BR-light.svg"><img src="https://raw.githubusercontent.com/muhittincamdali/iOS-Testing-Automation-Framework/main/.github/brand/banner-pt-BR-light.svg" alt="iOS Testing Automation: Robots, localizadores que se corrigem, diferenças de capturas, acessibilidade e relatórios de CI para XCUITest."></picture></p>
@@ -50,7 +50,7 @@ em um log de CI. O pacote não tem dependências e vai apenas nos seus targets d
 - **Saída pronta para CI** — `junit.xml` e um resumo de job em Markdown para cada bundle de testes, com senhas
   e tokens digitados mascarados, além de uma análise de testes instáveis ao longo de várias execuções.
 - **Regras testadas** — a correção automática, a auditoria, a comparação de imagens, os relatórios e o mascaramento de dados
-  são Swift puro, cobertos por 112 testes de Swift Testing no macOS e em um simulador de iPhone; 9 testes de interface
+  são Swift puro, cobertos por 118 testes de Swift Testing no macOS e em um simulador de iPhone; 9 testes de interface
   no [app de exemplo](Examples/AutomationShowcase) executam a camada XCUITest de ponta a ponta no CI.
 
 ### O que está incluído
@@ -202,7 +202,8 @@ app.on(SignInRobot.self)
 ```
 
 `typeSecret(_:into:)` registra a senha, que por isso é mascarada como `••••` nos nomes dos passos, nas mensagens de falha
-e nos relatórios.
+e nos relatórios. Ele cola a senha em vez de digitá-la, porque o XCTest registra o texto digitado
+nos próprios passos, onde nenhum mascaramento chega. Depois, a área de transferência é esvaziada.
 
 ### Mantenha os testes funcionando quando um identificador muda
 
@@ -371,8 +372,9 @@ o Xcode 27.
   disponível, então depender dele quebraria todos os targets de testes de interface. As asserções pensadas para testes
   unitários lançam erros, que ambos os frameworks relatam como falha.
 - A entrada vinda de fora do teste é limitada: os tamanhos de imagem são verificados antes da decodificação, os nomes
-  de snapshots viram nomes de arquivo seguros, números NaN e infinitos são limitados em vez de convertidos, e toda
-  lista que cresce com a entrada tem um limite.
+  de snapshots viram nomes de arquivo seguros, números NaN e infinitos são limitados em vez de convertidos, e os
+  spies, o registro de correções, a auditoria e a busca por distância de edição têm limites fixos. Os
+  resultados de teste coletados e os segredos registrados são mantidos por inteiro durante a execução.
 - O CI executa `swift test` no macOS e `xcodebuild test` em um simulador de iPhone, compila para iOS e
   macOS, executa os testes de interface do app de exemplo e publica a documentação DocC.
 

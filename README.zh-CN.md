@@ -1,4 +1,4 @@
-<!-- i18n-source: README.md@96afd867c60fbff34acfc396cf2b8d69f0d0f58f status=reviewed -->
+<!-- i18n-source: README.md@f538d6e779afe3cd003645722b6571419027f952 status=reviewed -->
 <!-- brand:start -->
 
 <p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/muhittincamdali/iOS-Testing-Automation-Framework/main/.github/brand/banner-zh-CN-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/muhittincamdali/iOS-Testing-Automation-Framework/main/.github/brand/banner-zh-CN-light.svg"><img src="https://raw.githubusercontent.com/muhittincamdali/iOS-Testing-Automation-Framework/main/.github/brand/banner-zh-CN-light.svg" alt="iOS Testing Automation: 面向 XCUITest 的 Robot、自愈定位、截图对比、无障碍审查和 CI 报告。"></picture></p>
@@ -35,7 +35,7 @@
 - **看得见的视觉回归** — 截图和 SwiftUI 视图会与基准 PNG 对比，支持容差、忽略区域（时钟、日期），并生成差异图，其中每个变化的像素都显示为蓝色。
 - **每次运行都做无障碍检查** — 一次调用即可检查界面上没有标签的控件、小于 44 × 44 点的触控目标、重复元素类型的标签以及重复的标识符，还可以加入 Apple 的 `performAccessibilityAudit()`。
 - **适合 CI 的输出** — 为每个测试包生成 `junit.xml` 和 Markdown 作业摘要，输入的密码和令牌会被遮蔽，还能对多次运行做不稳定测试分析。
-- **经过测试的规则** — 自愈、审查、图像对比、报告和遮蔽都是纯 Swift 实现，在 macOS 和 iPhone 模拟器上由 112 个 Swift Testing 测试覆盖；[示例应用](Examples/AutomationShowcase)中的 9 个 UI 测试在 CI 上端到端运行 XCUITest 层。
+- **经过测试的规则** — 自愈、审查、图像对比、报告和遮蔽都是纯 Swift 实现，在 macOS 和 iPhone 模拟器上由 118 个 Swift Testing 测试覆盖；[示例应用](Examples/AutomationShowcase)中的 9 个 UI 测试在 CI 上端到端运行 XCUITest 层。
 
 ### 包含的内容
 
@@ -178,7 +178,7 @@ app.on(SignInRobot.self)
     .assertCart(contains: 2)
 ```
 
-`typeSecret(_:into:)` 会登记密码，因此密码在步骤名称、失败信息和报告中都会显示为 `••••`。
+`typeSecret(_:into:)` 会登记密码，因此密码在步骤名称、失败信息和报告中都会显示为 `••••`。它会粘贴密码而不是逐字输入，因为 XCTest 会把输入的文本记录在它自己的步骤中，任何遮蔽器都触及不到那里。粘贴后剪贴板会被清空。
 
 ### 标识符变更后让测试继续可用
 
@@ -328,7 +328,7 @@ XCUITest 辅助功能需要 UI 测试 target；其他辅助功能可在任何测
 - `Sources/iOSTestingAutomationFramework/` 下每个领域一个文件夹：`Core`、`Reporting`、`Waiting`、`Resilience`、`Locators`、`Accessibility`、`Visual`、`Doubles`、`Fixtures`、`Performance` 和 `XCUI`。
 - `XCUI` 之外的所有内容都是纯 Swift。各项规则（自愈、审查、图像对比、报告、遮蔽）作用于 `ElementDescriptor` 和 `Bitmap` 等值，因此单元测试无需运行应用就能覆盖它们。`XCUI` 是一个很薄的层：它把界面的一次快照转换为描述符，并通过 XCTest 报告失败。
 - 该软件包不导入 Swift Testing：Xcode 构建 UI 测试包时无法使用 Swift Testing，依赖它会让所有 UI 测试 target 构建失败。面向单元测试的断言会抛出错误，两种框架都会把它报告为失败。
-- 来自测试之外的输入都有限制：图像尺寸在解码前检查，快照名称会变成安全的文件名，NaN 和无穷大会被截断而不是转换，所有随输入增长的列表都有上限。
+- 来自测试之外的输入都有限制：图像尺寸在解码前检查，快照名称会变成安全的文件名，NaN 和无穷大会被截断而不是转换；Spy、修复日志、审查和编辑距离搜索都有固定上限。收集到的测试结果和登记的机密会在整个运行期间完整保留。
 - CI 会在 macOS 上运行 `swift test`，在 iPhone 模拟器上运行 `xcodebuild test`，为 iOS 和 macOS 构建，运行示例应用的 UI 测试，并发布 DocC 文档。
 
 在本地运行测试：
