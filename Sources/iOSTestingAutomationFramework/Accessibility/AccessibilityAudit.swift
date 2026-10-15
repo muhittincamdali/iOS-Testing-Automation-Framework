@@ -67,7 +67,9 @@ public struct AccessibilityAudit: Sendable, Equatable {
         // The kinds of the current element's ancestors, one entry per depth.
         var ancestors: [ElementKind] = []
         for element in elements {
-            let depth = max(element.depth, 0)
+            // Depths beyond the tree depth XCUIElement.descriptors() produces are clamped, so a
+            // descriptor with a huge depth cannot grow the ancestor list without bound.
+            let depth = min(max(element.depth, 0), Self.maximumDepth)
             if ancestors.count > depth { ancestors.removeSubrange(depth...) }
             // An element inside a control (the switch inside a SwiftUI Toggle, the chevron of a
             // NavigationLink) is part of it: VoiceOver reads the control as one element.
@@ -85,6 +87,9 @@ public struct AccessibilityAudit: Sendable, Equatable {
         }
         return issues
     }
+
+    /// The deepest level the audit tracks; deeper elements are treated as being at this level.
+    public static let maximumDepth = 256
 
     /// Bars whose controls get a larger hit area from the system than their drawn frame.
     public static let systemBarKinds: Set<ElementKind> = [.navigationBar, .tabBar, .toolbar]

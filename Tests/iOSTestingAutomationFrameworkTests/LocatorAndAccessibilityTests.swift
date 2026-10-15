@@ -179,6 +179,18 @@ struct AccessibilityAuditTests {
         #expect(issues.map(\.rule) == [.imageWithoutLabel])
     }
 
+    @Test("a huge or negative depth neither traps nor allocates without bound")
+    func extremeDepths() {
+        let issues = AccessibilityAudit(rules: [.missingLabel]).run(on: [
+            ElementDescriptor(kind: .other, depth: .max),
+            ElementDescriptor(kind: .button, depth: .max),
+            ElementDescriptor(kind: .button, depth: .min),
+            ElementDescriptor(kind: .button, depth: -1)
+        ])
+        // The first button sits below a level-capped `.other`, so it is checked on its own.
+        #expect(issues.count == 3)
+    }
+
     @Test("a non-finite minimum turns the size rule off")
     func nonFiniteMinimum() {
         let small = ElementDescriptor(kind: .button, label: "Info", frame: CGRect(x: 0, y: 0, width: 4, height: 4))

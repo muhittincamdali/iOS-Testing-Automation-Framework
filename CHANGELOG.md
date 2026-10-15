@@ -76,7 +76,8 @@ every UI helper, and merges the useful parts of iOSTestingTools, which is being 
   decoded; image sizes use overflow-checked arithmetic.
 - Conversions from floating-point frames, timeouts and durations reject or clamp NaN, infinite
   and out-of-range values instead of trapping.
-- Spies, the healing log and edit-distance work have fixed upper bounds.
+- Spies, the healing log, the audit's ancestor tracking and edit-distance work have fixed upper
+  bounds.
 - Typed secrets and credential patterns are masked in activity names, failure messages,
   `junit.xml` and `summary.md`, including percent-encoded, JSON-escaped and overlapping forms.
 
