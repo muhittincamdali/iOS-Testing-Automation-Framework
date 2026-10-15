@@ -1,4 +1,4 @@
-<!-- i18n-source: README.md@f538d6e779afe3cd003645722b6571419027f952 status=reviewed -->
+<!-- i18n-source: README.md@e359efcbf2fd2cbac05fd38b031a929942168a20 status=reviewed -->
 <!-- brand:start -->
 
 <p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/muhittincamdali/iOS-Testing-Automation-Framework/main/.github/brand/banner-tr-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/muhittincamdali/iOS-Testing-Automation-Framework/main/.github/brand/banner-tr-light.svg"><img src="https://raw.githubusercontent.com/muhittincamdali/iOS-Testing-Automation-Framework/main/.github/brand/banner-tr-light.svg" alt="iOS Testing Automation: XCUITest için robotlar, kendini onaran bulucular, görüntü farkı, erişilebilirlik denetimi ve CI raporları."></picture></p>
