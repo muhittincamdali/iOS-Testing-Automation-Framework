@@ -101,6 +101,18 @@ struct RedactorTests {
         #expect(redactor.redact("no secrets here") == "no secrets here")
     }
 
+    @Test("masks a quoted value up to its closing quote")
+    func quotedValues() {
+        let redactor = Redactor(mask: "#")
+        #expect(redactor.redact(##"{"password": "correct horse battery"}"##) == ##"{"password": "#"}"##)
+        #expect(redactor.redact("password='correct horse battery' user=ada") == "password='#' user=ada")
+        #expect(redactor.redact(##"{"token": "a \"quoted\" word", "id": 4}"##) == ##"{"token": "#", "id": 4}"##)
+        #expect(redactor.redact(##"body: {\"password\": \"correct horse\"}"##) == ##"body: {\"password\": \"#\"}"##)
+        #expect(redactor.redact(##"password: "unclosed value"##) == ##"password: "#"##)
+        #expect(redactor.redact(##"{"password": ""}"##) == ##"{"password": ""}"##)
+        #expect(redactor.redact(##"{"authorization": "Bearer abc.def"}"##) == ##"{"authorization": "Bearer #"}"##)
+    }
+
     @Test("leaves patterns alone when turned off")
     func patternsOff() {
         let redactor = Redactor(masksCommonPatterns: false)

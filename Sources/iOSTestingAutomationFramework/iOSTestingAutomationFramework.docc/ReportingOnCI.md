@@ -56,7 +56,7 @@ Every report and robot message passes through a ``Redactor``. It masks:
   `URLComponents`, `addingPercentEncoding` with any URL character set, or form encoding with
   `+` for a space; hex in either case) or JSON-escaped, including `\u00e4` escapes;
 - values after `password=`, `token:`, `api_key=`, `secret=` and similar keys, and the token
-  after `Bearer`.
+  after `Bearer`. A quoted value is masked up to its closing quote, spaces included.
 
 Overlapping matches are merged before masking, so no part of a secret stays visible.
 

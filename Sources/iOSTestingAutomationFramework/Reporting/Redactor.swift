@@ -13,7 +13,8 @@ import Foundation
 ///   anything is replaced, so two secrets that share characters leave no part of either
 ///   visible. Unicode text matches in composed and decomposed form.
 /// - **Common credential patterns** (unless turned off): the value after `password=`,
-///   `token:`, `api_key=`, `secret=` and similar keys, and the token after `Bearer`.
+///   `token:`, `api_key=`, `secret=` and similar keys, and the token after `Bearer`. A quoted
+///   value is masked up to its closing quote, spaces included.
 ///
 /// Empty and whitespace-only secrets are ignored, because masking them would mask every gap
 /// between words.
@@ -64,11 +65,12 @@ public struct Redactor: Sendable, Hashable {
     // MARK: - Matching
 
     // `key = value`, `key: value`, `"key": "value"` and `Bearer <token>`. The key list is
-    // anchored on word boundaries; the value stops at whitespace, quotes and separators. A
-    // value that starts with `Bearer ` or `Basic ` is left to the second pattern, which masks
-    // the token after the scheme.
+    // anchored on word boundaries. A quoted value (`"…"`, `'…'`, or `\"…\"` inside a JSON
+    // string) runs to its closing quote, or to the end of the line when the quote is not
+    // closed; an unquoted one stops at whitespace, quotes and separators. A value that starts with `Bearer ` or `Basic ` is left to the second
+    // pattern, which masks the token after the scheme.
     private static let credentialPattern = try? NSRegularExpression(
-        pattern: #"(?i)\b(?:password|passwd|pwd|passcode|secret|client_secret|token|access_token|refresh_token|id_token|api[_-]?key|apikey|auth|authorization|session|cookie)\b"?\s*[:=]\s*"?(?!(?:bearer|basic)\s)([^\s"'&,;}]+)"#
+        pattern: #"(?i)\b(?:password|passwd|pwd|passcode|secret|client_secret|token|access_token|refresh_token|id_token|api[_-]?key|apikey|auth|authorization|session|cookie)\b\\?["']?\s*[:=]\s*(?:"(?!(?:bearer|basic)\s)((?:[^"\\\r\n]|\\.)+)"?|'(?!(?:bearer|basic)\s)((?:[^'\\\r\n]|\\.)+)'?|\\"(?!(?:bearer|basic)\s)((?:(?!\\")[^\r\n])+)\\"|\\?["']?(?!(?:bearer|basic)\s)([^\s"'&,;}]+))"#
     )
     private static let bearerPattern = try? NSRegularExpression(
         pattern: #"(?i)\b(?:bearer|basic)\s+([A-Za-z0-9._~+/-]+=*)"#
@@ -79,7 +81,11 @@ public struct Redactor: Sendable, Hashable {
         var found: [Range<String.Index>] = []
         for pattern in [credentialPattern, bearerPattern].compactMap({ $0 }) {
             for match in pattern.matches(in: text, range: whole) {
-                if let range = Range(match.range(at: 1), in: text), !range.isEmpty {
+                // The value is in whichever capture group matched.
+                let value = (1..<match.numberOfRanges).lazy
+                    .map { match.range(at: $0) }
+                    .first { $0.location != NSNotFound }
+                if let value, let range = Range(value, in: text), !range.isEmpty {
                     found.append(range)
                 }
             }

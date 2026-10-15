@@ -81,7 +81,8 @@ every UI helper, and merges the useful parts of iOSTestingTools, which is being 
 - Typed secrets and credential patterns are masked in activity names, failure messages,
   `junit.xml` and `summary.md`. A secret is also found where a URL or form encoder
   percent-encoded it (hex in either case), where it was JSON-escaped (also as `\u00e4`), in
-  composed and decomposed Unicode, and where it overlaps another secret.
+  composed and decomposed Unicode, and where it overlaps another secret. A quoted credential
+  value is masked up to its closing quote.
 
 ## [1.0.0] - 2026-02-02
 
