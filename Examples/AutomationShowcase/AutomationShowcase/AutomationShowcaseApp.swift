@@ -4,6 +4,7 @@ import SwiftUI
 ///
 /// Launch arguments, set by the tests:
 /// - `-screen auditDemo` opens a screen with deliberate accessibility problems.
+/// - `-screen quickStart` opens the counter from the README's quick start.
 /// - `-colorScheme dark` forces dark appearance for screenshots.
 /// - `-frozenClock` shows a fixed "last updated" time instead of the current one.
 @main
@@ -16,6 +17,8 @@ struct AutomationShowcaseApp: App {
             Group {
                 if arguments.screen == "auditDemo" {
                     AuditDemoView()
+                } else if arguments.screen == "quickStart" {
+                    ContentView()
                 } else if shop.isSignedIn {
                     CatalogView(frozenClock: arguments.frozenClock)
                 } else {

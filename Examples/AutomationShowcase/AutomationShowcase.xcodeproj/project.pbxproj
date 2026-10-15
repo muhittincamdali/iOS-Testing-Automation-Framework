@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		126D2324C011571DED671D9A /* CatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B26B7751D6AD3DE666907D /* CatalogView.swift */; };
 		1A94F23079A7C94DEF9F4924 /* VisualRegressionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A718A116CC05037170B472DB /* VisualRegressionTests.swift */; };
+		21EB4C1DA2A9FA7B10876D08 /* QuickStartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E87669A9A9A9A1D3EAF0D6 /* QuickStartTests.swift */; };
 		244E59687141DCD8662FC5A8 /* iOSTestingAutomationFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 98515015C339633A311724D1 /* iOSTestingAutomationFramework */; };
 		464721948317B2689A1DC8E4 /* ShopFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D7F0154BFFB353C6903A38 /* ShopFlowTests.swift */; };
 		7B3E2D4C2199F779856CBD52 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3ECEFB993013CA98DE604 /* Shop.swift */; };
 		7B8EEFEB3A07C42683972859 /* ShowcaseTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7217228EFEE229FF6228FEB0 /* ShowcaseTestCase.swift */; };
+		8D3754F19747FD5F16917DA8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE7823FD3FD1A3D389D0549 /* ContentView.swift */; };
 		9D6A53544A5255B3F0205DCE /* AutomationShowcaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B5EC0C492EEF14CFC3B07F /* AutomationShowcaseApp.swift */; };
 		B605C2D8F7B90A8156CBC352 /* Robots.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EA04CB0C21D3D09F0A07B9 /* Robots.swift */; };
 		DA879A498509058CECF75DD5 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74ABC4F688452FD7E5D0E4B /* SignInView.swift */; };
@@ -32,10 +34,12 @@
 
 /* Begin PBXFileReference section */
 		68B5EC0C492EEF14CFC3B07F /* AutomationShowcaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomationShowcaseApp.swift; sourceTree = "<group>"; };
+		6AE7823FD3FD1A3D389D0549 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7217228EFEE229FF6228FEB0 /* ShowcaseTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowcaseTestCase.swift; sourceTree = "<group>"; };
 		73D7F0154BFFB353C6903A38 /* ShopFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopFlowTests.swift; sourceTree = "<group>"; };
 		77B26B7751D6AD3DE666907D /* CatalogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogView.swift; sourceTree = "<group>"; };
 		86B355E6F22C29BA2770F8DA /* HealingAndAuditTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealingAndAuditTests.swift; sourceTree = "<group>"; };
+		89E87669A9A9A9A1D3EAF0D6 /* QuickStartTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickStartTests.swift; sourceTree = "<group>"; };
 		8F9166D077D90A355D01868E /* iOS-Testing-Automation-Framework */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "iOS-Testing-Automation-Framework"; path = ../..; sourceTree = SOURCE_ROOT; };
 		9BA81F331DC18A917735465C /* AutomationShowcase.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = AutomationShowcase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E0E62E3EF150593CA5FFDD1 /* AuditDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuditDemoView.swift; sourceTree = "<group>"; };
@@ -81,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				86B355E6F22C29BA2770F8DA /* HealingAndAuditTests.swift */,
+				89E87669A9A9A9A1D3EAF0D6 /* QuickStartTests.swift */,
 				B7EA04CB0C21D3D09F0A07B9 /* Robots.swift */,
 				73D7F0154BFFB353C6903A38 /* ShopFlowTests.swift */,
 				7217228EFEE229FF6228FEB0 /* ShowcaseTestCase.swift */,
@@ -103,6 +108,7 @@
 				9E0E62E3EF150593CA5FFDD1 /* AuditDemoView.swift */,
 				68B5EC0C492EEF14CFC3B07F /* AutomationShowcaseApp.swift */,
 				77B26B7751D6AD3DE666907D /* CatalogView.swift */,
+				6AE7823FD3FD1A3D389D0549 /* ContentView.swift */,
 				D9A3ECEFB993013CA98DE604 /* Shop.swift */,
 				D74ABC4F688452FD7E5D0E4B /* SignInView.swift */,
 			);
@@ -198,6 +204,7 @@
 				E6D70D2740053C4FD116AA9A /* AuditDemoView.swift in Sources */,
 				9D6A53544A5255B3F0205DCE /* AutomationShowcaseApp.swift in Sources */,
 				126D2324C011571DED671D9A /* CatalogView.swift in Sources */,
+				8D3754F19747FD5F16917DA8 /* ContentView.swift in Sources */,
 				7B3E2D4C2199F779856CBD52 /* Shop.swift in Sources */,
 				DA879A498509058CECF75DD5 /* SignInView.swift in Sources */,
 			);
@@ -208,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE12BDFF7DE62025CBA309CE /* HealingAndAuditTests.swift in Sources */,
+				21EB4C1DA2A9FA7B10876D08 /* QuickStartTests.swift in Sources */,
 				B605C2D8F7B90A8156CBC352 /* Robots.swift in Sources */,
 				464721948317B2689A1DC8E4 /* ShopFlowTests.swift in Sources */,
 				7B8EEFEB3A07C42683972859 /* ShowcaseTestCase.swift in Sources */,
