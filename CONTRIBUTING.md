@@ -45,6 +45,21 @@ Do not paste real passwords or tokens from test accounts. Security problems go t
 8. If a change affects the example app's screens or the difference image, regenerate the
    README images with `scripts/generate-screenshots.sh`.
 
+## Releasing
+
+For maintainers, after the release's pull request is merged:
+
+1. Wait for the CI, Documentation, Example app and Quality workflows on `main` to pass. The
+   Documentation workflow deploys the site; the repository's Pages source must be
+   **GitHub Actions**.
+2. Open the [documentation](https://muhittincamdali.github.io/iOS-Testing-Automation-Framework/documentation/iostestingautomationframework/)
+   and its four articles. The link check reads them from the `.docc` sources, so this is the
+   step that sees the live site.
+3. Tag the merge commit `vX.Y.Z` and publish a GitHub release with that version's changelog
+   section.
+4. In `CHANGELOG.md`, link the version heading to its release and point `[Unreleased]` at the
+   new tag; regenerate the version badge in `.github/brand` so it shows the new version.
+
 ## Code style
 
 - Follow the [Swift API Design Guidelines](https://www.swift.org/documentation/api-design-guidelines/).

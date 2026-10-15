@@ -44,9 +44,11 @@ remap = [
   '^https://raw\.githubusercontent\.com/muhittincamdali/iOS-Testing-Automation-Framework/main/(.*)$ file:///home/runner/work/iOS-Testing-Automation-Framework/iOS-Testing-Automation-Framework/$1',
   '^https://github\.com/muhittincamdali/iOS-Testing-Automation-Framework/(?:blob|tree)/main/(.*)$ file:///home/runner/work/iOS-Testing-Automation-Framework/iOS-Testing-Automation-Framework/$1',
   # The article pages on GitHub Pages are built from the .docc articles by docs.yml after a push
-  # to main, so a pull request that adds an article links to a page that is not online yet. Each
-  # article URL is checked against its source file instead; the documentation root stays a live
-  # check, so a site that is down still fails.
+  # to main, so a pull request that adds an article links to a page that is not online yet, and
+  # before the first deployment the site does not exist at all. Each article URL, and the
+  # documentation root, is checked against its source file instead. The Documentation workflow
+  # verifies that the site builds, and the release checklist in CONTRIBUTING.md visits it.
+  '^https://muhittincamdali\.github\.io/iOS-Testing-Automation-Framework/documentation/iostestingautomationframework/?$ file:///home/runner/work/iOS-Testing-Automation-Framework/iOS-Testing-Automation-Framework/Sources/iOSTestingAutomationFramework/iOSTestingAutomationFramework.docc/iOSTestingAutomationFramework.md',
   '^https://muhittincamdali\.github\.io/iOS-Testing-Automation-Framework/documentation/iostestingautomationframework/gettingstarted$ file:///home/runner/work/iOS-Testing-Automation-Framework/iOS-Testing-Automation-Framework/Sources/iOSTestingAutomationFramework/iOSTestingAutomationFramework.docc/GettingStarted.md',
   '^https://muhittincamdali\.github\.io/iOS-Testing-Automation-Framework/documentation/iostestingautomationframework/writinguitestswithrobots$ file:///home/runner/work/iOS-Testing-Automation-Framework/iOS-Testing-Automation-Framework/Sources/iOSTestingAutomationFramework/iOSTestingAutomationFramework.docc/WritingUITestsWithRobots.md',
   '^https://muhittincamdali\.github\.io/iOS-Testing-Automation-Framework/documentation/iostestingautomationframework/comparingscreenshots$ file:///home/runner/work/iOS-Testing-Automation-Framework/iOS-Testing-Automation-Framework/Sources/iOSTestingAutomationFramework/iOSTestingAutomationFramework.docc/ComparingScreenshots.md',
