@@ -42,7 +42,7 @@ On a mismatch the baseline, the actual image and a difference image are attached
 activity, and the actual and difference PNGs are written to the store's failure folder. In
 the difference image the actual screenshot is faded and every changed pixel is blue:
 
-![Baseline, changed screen and difference image](visual-diff-light.png)
+@Image(source: "visual-diff-light.png", alt: "The catalog screen with prices, the same screen with the prices hidden, and the difference image in which the prices and the switch are blue")
 
 ## Tolerances
 
