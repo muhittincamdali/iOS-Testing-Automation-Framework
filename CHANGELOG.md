@@ -82,7 +82,7 @@ every UI helper, and merges the useful parts of iOSTestingTools, which is being 
   statistics from the measurements, so data without a finite measurement throws instead of
   making `percentile(_:)` crash.
 - Typed secrets and credential patterns are masked in activity names, failure messages,
-  `junit.xml` and `summary.md`. A secret is also found where a URL or form encoder
+  `junit.xml` and `summary.md`, including the healed-locator suggestions. A secret is also found where a URL or form encoder
   percent-encoded it (hex in either case), where it was JSON-escaped (also as `\u00e4`), in
   composed and decomposed Unicode, and where it overlaps another secret. A quoted credential
   value is masked up to its closing quote.

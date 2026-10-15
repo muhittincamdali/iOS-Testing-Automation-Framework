@@ -130,10 +130,16 @@ public final class TestResultCollector: NSObject, XCTestObservation, @unchecked 
         let report = report()
         try FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true)
         try report.junitXML().write(to: directory.appendingPathComponent("junit\(fileSuffix).xml"), atomically: true, encoding: .utf8)
-        var summary = report.markdownSummary()
-        let healing = HealingLog.report()
-        if !healing.isEmpty { summary += "\n" + healing }
+        let summary = Self.summary(of: report, healing: HealingLog.report())
         try summary.write(to: directory.appendingPathComponent("summary\(fileSuffix).md"), atomically: true, encoding: .utf8)
+    }
+
+    /// The Markdown summary followed by the healing suggestions. A healed locator's label or
+    /// value can contain a secret, so the suggestions go through the report's redactor too.
+    static func summary(of report: TestReport, healing: String) -> String {
+        var summary = report.markdownSummary()
+        if !healing.isEmpty { summary += "\n" + report.redactor.redact(healing) }
+        return summary
     }
 
     /// Splits `-[Module.Suite testName]` into the suite and the test name.

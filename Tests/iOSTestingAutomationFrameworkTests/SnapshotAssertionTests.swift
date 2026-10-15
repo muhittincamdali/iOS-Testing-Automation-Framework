@@ -60,4 +60,15 @@ struct TestResultCollectorTests {
         #expect(TestResultCollector.split("-[SignInTests testSignIn]") == ("SignInTests", "testSignIn"))
         #expect(TestResultCollector.split("plainName") == ("", "plainName"))
     }
+
+    @Test("the healing suggestions in the summary are masked")
+    func healingSuggestionsAreMasked() {
+        let report = TestReport(name: "UI", results: [], redactor: Redactor(secrets: ["s3cr3t-label"]))
+        let healing = "### Healed locators\n\n- `login` was found by label: Add .accessibilityIdentifier(\"login\") to button \"s3cr3t-label\"\n"
+        let summary = TestResultCollector.summary(of: report, healing: healing)
+        #expect(summary.contains("### Healed locators"))
+        #expect(summary.contains(#"button "••••""#))
+        #expect(!summary.contains("s3cr3t-label"))
+        #expect(TestResultCollector.summary(of: report, healing: "") == report.markdownSummary())
+    }
 }
