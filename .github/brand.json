@@ -1,0 +1,106 @@
+{
+  "name": "iOS Testing Automation",
+  "repository": "muhittincamdali/iOS-Testing-Automation-Framework",
+  "tagline": {
+    "en": "Robots, self-healing locators, screenshot diffs, accessibility audits and CI reports for XCUITest.",
+    "tr": "XCUITest için robotlar, kendini onaran bulucular, görüntü farkı, erişilebilirlik denetimi ve CI raporları.",
+    "zh-CN": "面向 XCUITest 的 Robot、自愈定位、截图对比、无障碍审查和 CI 报告。",
+    "ja": "XCUITest 向けのロボット、自己修復ロケーター、画像比較、アクセシビリティ監査、CI レポート。",
+    "ko": "XCUITest용 로봇, 자가 복구 로케이터, 스크린샷 비교, 접근성 감사, CI 보고서.",
+    "es": "Robots, localizadores autorreparables, diferencias de capturas, accesibilidad e informes de CI para XCUITest.",
+    "de": "Robots, selbstheilende Locators, Screenshot-Diffs, Barrierefreiheitsprüfung und CI-Berichte für XCUITest.",
+    "fr": "Robots, localisateurs auto-réparés, écarts de captures, audits d’accessibilité et rapports CI pour XCUITest.",
+    "pt-BR": "Robots, localizadores que se corrigem, diferenças de capturas, acessibilidade e relatórios de CI para XCUITest.",
+    "ru": "Роботы, самовосстанавливающиеся локаторы, сравнение скриншотов, доступность и отчёты CI для XCUITest."
+  },
+  "tags": {
+    "en": [
+      "XCUITest",
+      "Swift 6",
+      "iOS · macOS",
+      "No dependencies"
+    ],
+    "tr": [
+      "XCUITest",
+      "Swift 6",
+      "iOS · macOS",
+      "Bağımlılık yok"
+    ],
+    "zh-CN": [
+      "XCUITest",
+      "Swift 6",
+      "iOS · macOS",
+      "无依赖"
+    ],
+    "ja": [
+      "XCUITest",
+      "Swift 6",
+      "iOS · macOS",
+      "依存関係なし"
+    ],
+    "ko": [
+      "XCUITest",
+      "Swift 6",
+      "iOS · macOS",
+      "의존성 없음"
+    ],
+    "es": [
+      "XCUITest",
+      "Swift 6",
+      "iOS · macOS",
+      "Sin dependencias"
+    ],
+    "de": [
+      "XCUITest",
+      "Swift 6",
+      "iOS · macOS",
+      "Keine Abhängigkeiten"
+    ],
+    "fr": [
+      "XCUITest",
+      "Swift 6",
+      "iOS · macOS",
+      "Sans dépendance"
+    ],
+    "pt-BR": [
+      "XCUITest",
+      "Swift 6",
+      "iOS · macOS",
+      "Sem dependências"
+    ],
+    "ru": [
+      "XCUITest",
+      "Swift 6",
+      "iOS · macOS",
+      "Без зависимостей"
+    ]
+  },
+  "motif": "phone",
+  "buttons": [
+    "start",
+    "docs",
+    "examples"
+  ],
+  "links": {
+    "docs": "https://muhittincamdali.github.io/iOS-Testing-Automation-Framework/documentation/iostestingautomationframework/",
+    "examples": "Examples/"
+  },
+  "languages": [
+    "en",
+    "tr",
+    "zh-CN",
+    "ja",
+    "ko",
+    "es",
+    "de",
+    "fr",
+    "pt-BR",
+    "ru"
+  ],
+  "docc": {
+    "targets": [
+      "iOSTestingAutomationFramework"
+    ]
+  },
+  "socialTheme": "dark"
+}

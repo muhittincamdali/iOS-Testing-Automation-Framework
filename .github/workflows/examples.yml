@@ -1,0 +1,62 @@
+# Repository-specific: builds the example app and runs its UI tests, which drive the app with this
+# package's robots, healing locators, accessibility audit and screenshot comparison.
+name: Example app
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: examples-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  ui-tests:
+    name: AutomationShowcase UI tests (iOS simulator)
+    runs-on: macos-26
+    timeout-minutes: 40
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Toolchain
+        run: xcodebuild -version
+
+      - name: Run the UI tests
+        working-directory: Examples/AutomationShowcase
+        run: |
+          set -o pipefail
+          udid=$(xcrun simctl list devices available --json \
+            | jq -r '[.devices | to_entries[] | select(.key | test("iOS")) | .value[] | select(.name | startswith("iPhone"))] | last | .udid')
+          if [ -z "$udid" ] || [ "$udid" = "null" ]; then
+            echo "::error::No available iPhone simulator on this image"
+            exit 1
+          fi
+          mkdir -p "$RUNNER_TEMP/reports"
+          TEST_RUNNER_TESTING_AUTOMATION_REPORT_DIR="$RUNNER_TEMP/reports" \
+            xcodebuild test -project AutomationShowcase.xcodeproj -scheme AutomationShowcase \
+            -destination "id=$udid" -skipPackagePluginValidation -skipMacroValidation \
+            -resultBundlePath "$RUNNER_TEMP/AutomationShowcase.xcresult" \
+            CODE_SIGNING_ALLOWED=NO -quiet
+
+      # typeSecret pastes passwords so that XCTest's own activity titles never contain them.
+      # The result bundle holds every activity and failure message, so it is searched together
+      # with the reports for the passwords the UI tests enter.
+      - name: Check that the passwords stay out of the results
+        run: |
+          scripts/check-secrets-in-results.sh "$RUNNER_TEMP/AutomationShowcase.xcresult" \
+            "$RUNNER_TEMP/reports" correct-horse-battery not-the-password
+
+      - name: Job summary
+        if: always()
+        run: |
+          if [ -f "$RUNNER_TEMP/reports/summary.md" ]; then
+            cat "$RUNNER_TEMP/reports/summary.md" >> "$GITHUB_STEP_SUMMARY"
+          fi

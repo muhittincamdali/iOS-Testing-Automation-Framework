@@ -1,0 +1,57 @@
+# XcodeGen spec for AutomationShowcase.xcodeproj. The project file is committed, so XcodeGen is
+# only needed after changing this file: run `xcodegen` in this folder.
+name: AutomationShowcase
+options:
+  bundleIdPrefix: io.github.muhittincamdali
+  deploymentTarget:
+    iOS: "17.0"
+packages:
+  iOSTestingAutomationFramework:
+    path: ../..
+targets:
+  AutomationShowcase:
+    type: application
+    platform: iOS
+    sources: [AutomationShowcase]
+    settings:
+      base:
+        SWIFT_VERSION: "6.0"
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: Automation Showcase
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait
+        TARGETED_DEVICE_FAMILY: "1"
+        CODE_SIGN_STYLE: Automatic
+        ENABLE_USER_SCRIPT_SANDBOXING: YES
+  AutomationShowcaseUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources: [AutomationShowcaseUITests]
+    dependencies:
+      - target: AutomationShowcase
+      - package: iOSTestingAutomationFramework
+        product: iOSTestingAutomationFramework
+    settings:
+      base:
+        SWIFT_VERSION: "6.0"
+        GENERATE_INFOPLIST_FILE: YES
+        TEST_TARGET_NAME: AutomationShowcase
+        CODE_SIGN_STYLE: Automatic
+        ENABLE_USER_SCRIPT_SANDBOXING: YES
+schemes:
+  AutomationShowcase:
+    build:
+      targets:
+        AutomationShowcase: all
+        AutomationShowcaseUITests: [test]
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets:
+        # One runner process, so TestResultCollector writes a single junit.xml.
+        - name: AutomationShowcaseUITests
+          parallelizable: false

@@ -1,35 +1,29 @@
-// swift-tools-version: 5.9
-// The swift-tools-version declares the minimum version of Swift required to build this package.
-
+// swift-tools-version: 6.2
 import PackageDescription
 
 let package = Package(
     name: "iOSTestingAutomationFramework",
     platforms: [
-        .iOS(.v15),
-        .macOS(.v12),
-        .watchOS(.v8),
-        .tvOS(.v15)
+        .iOS(.v17),
+        .macOS(.v14)
     ],
     products: [
         .library(
             name: "iOSTestingAutomationFramework",
-            targets: ["iOSTestingAutomationFramework"]),
-    ],
-    dependencies: [
-        .package(url: "https://github.com/apple/swift-log.git", from: "1.0.0"),
+            targets: ["iOSTestingAutomationFramework"]
+        )
     ],
     targets: [
         .target(
             name: "iOSTestingAutomationFramework",
-            dependencies: [
-                .product(name: "Logging", package: "swift-log"),
-            ],
-            path: "Sources/iOSTestingAutomationFramework"),
-        
+            path: "Sources/iOSTestingAutomationFramework"
+        ),
         .testTarget(
             name: "iOSTestingAutomationFrameworkTests",
             dependencies: ["iOSTestingAutomationFramework"],
-            path: "Tests/FrameworkTests"),
+            path: "Tests/iOSTestingAutomationFrameworkTests",
+            // Baseline images for the snapshot tests, read from disk at run time.
+            exclude: ["__Snapshots__"]
+        )
     ]
 )
