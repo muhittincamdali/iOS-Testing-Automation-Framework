@@ -47,7 +47,7 @@ in a CI log. The package has no dependencies and goes in your test targets only.
 - **CI-ready output** — `junit.xml` and a Markdown job summary for each test bundle, with typed
   passwords and tokens masked, plus a flaky-test analysis over several runs.
 - **Tested rules** — the healer, the audit, the image comparison, the reports and the redaction
-  are plain Swift, covered by 111 Swift Testing tests on macOS and an iPhone simulator; 9 UI tests
+  are plain Swift, covered by 112 Swift Testing tests on macOS and an iPhone simulator; 9 UI tests
   in the [example app](Examples/AutomationShowcase) run the XCUITest layer end to end on CI.
 
 ### What's included
