@@ -18,6 +18,10 @@ extension Robot {
     ///     control you cannot change.
     ///   - includingSystemAudit: Also runs Apple's `performAccessibilityAudit()`, which checks
     ///     contrast, Dynamic Type, clipped text and more, and reports its own failures.
+    ///   - fileID: The file ID of the call, for the failure location. Leave the default.
+    ///   - filePath: The file path of the call, for the failure location. Leave the default.
+    ///   - line: The line of the call, for the failure location. Leave the default.
+    ///   - column: The column of the call, for the failure location. Leave the default.
     @discardableResult
     public func assertAccessible(
         audit: AccessibilityAudit = AccessibilityAudit(),

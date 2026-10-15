@@ -29,6 +29,7 @@ public enum ViewRenderer {
     /// Renders `view` at a fixed size.
     ///
     /// - Parameters:
+    ///   - view: The view to draw.
     ///   - size: The size in points. Both sides must be positive and finite, and the rendered
     ///     image must stay within ``Bitmap/maximumPixelCount``.
     ///   - scale: Pixels per point, from 1 to 4. The default, 2, matches most iPhone screens

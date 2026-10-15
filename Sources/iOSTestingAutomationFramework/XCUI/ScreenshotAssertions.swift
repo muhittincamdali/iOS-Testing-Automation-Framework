@@ -16,9 +16,15 @@ extension Robot {
     /// activity, where Xcode's test report shows them.
     ///
     /// - Parameters:
+    ///   - name: The baseline's name; it becomes a safe file name.
+    ///   - element: The element to capture. Defaults to the whole app.
     ///   - ignoredElements: Elements to leave out of the comparison, such as a clock or a date.
     ///   - comparator: The default tolerates small color changes (2 %) but no changed pixels.
     ///   - store: Defaults to `__Snapshots__/<test file>/` next to the test file.
+    ///   - fileID: The file ID of the call, for the failure location. Leave the default.
+    ///   - filePath: The file path of the call, for the failure location. Leave the default.
+    ///   - line: The line of the call, for the failure location. Leave the default.
+    ///   - column: The column of the call, for the failure location. Leave the default.
     @discardableResult
     public func assertScreenshot(
         named name: String,

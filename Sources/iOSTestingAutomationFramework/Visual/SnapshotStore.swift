@@ -78,6 +78,8 @@ public struct SnapshotStore: Sendable {
     ///   - failureDirectory: The folder for failure images. Defaults to a `Failures` folder in
     ///     the system's temporary directory, so test runs do not add files to your sources.
     ///   - recordMode: Overridden by `TESTING_AUTOMATION_RECORD` when that variable is set.
+    ///   - environment: Where to read `TESTING_AUTOMATION_RECORD` from; the process environment
+    ///     by default.
     public init(
         directory: URL,
         failureDirectory: URL? = nil,
