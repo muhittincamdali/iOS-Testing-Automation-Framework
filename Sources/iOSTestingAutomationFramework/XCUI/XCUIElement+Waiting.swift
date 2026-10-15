@@ -23,18 +23,21 @@ extension XCUIElement {
     @MainActor
     @discardableResult
     public func waitForLabel(_ label: String, timeout: TimeInterval = 5) -> Bool {
-        wait(for: NSPredicate(format: "label == %@", label), timeout: timeout)
+        wait(for: NSPredicate(format: "exists == true AND label == %@", label), timeout: timeout)
     }
 
     /// Waits until the element's `value`, as text, equals `value`.
     @MainActor
     @discardableResult
     public func waitForValue(_ value: String, timeout: TimeInterval = 5) -> Bool {
-        wait(for: NSPredicate(format: "value == %@", value), timeout: timeout)
+        wait(for: NSPredicate(format: "exists == true AND value == %@", value), timeout: timeout)
     }
 
     @MainActor
     private func wait(for predicate: NSPredicate, timeout: TimeInterval) -> Bool {
+        // XCTNSPredicateExpectation first evaluates after about a second, so a condition that
+        // already holds would still wait, and a timeout under a second would fail. Check now.
+        if predicate.evaluate(with: self) { return true }
         let expectation = XCTNSPredicateExpectation(predicate: predicate, object: self)
         return XCTWaiter().wait(for: [expectation], timeout: Self.sanitizedTimeout(timeout)) == .completed
     }
