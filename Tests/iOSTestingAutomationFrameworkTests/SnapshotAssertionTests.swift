@@ -11,7 +11,7 @@ private func temporaryDirectory() -> URL {
 @Suite("assertSnapshot", .serialized)
 @MainActor
 struct SnapshotAssertionTests {
-    @Test("assertSnapshot passes on a matching baseline and records an issue on a change")
+    @Test("passes on a matching baseline and throws on a change or a new baseline")
     func assertion() throws {
         let root = temporaryDirectory()
         defer { try? FileManager.default.removeItem(at: root) }
@@ -19,20 +19,23 @@ struct SnapshotAssertionTests {
         let size = CGSize(width: 16, height: 16)
         _ = try store.verify(try ViewRenderer.render(Swatch(color: .blue), size: size), named: "swatch")
 
-        assertSnapshot(of: Swatch(color: .blue), named: "swatch", size: size, store: store)
-        withKnownIssue {
-            assertSnapshot(of: Swatch(color: .orange), named: "swatch", size: size, store: store)
-        } matching: { issue in
-            issue.comments.contains { $0.rawValue.contains("does not match") }
+        try assertSnapshot(of: Swatch(color: .blue), named: "swatch", size: size, store: store)
+
+        let mismatch = #expect(throws: SnapshotError.self) {
+            try assertSnapshot(of: Swatch(color: .orange), named: "swatch", size: size, store: store)
         }
-        withKnownIssue {
-            assertSnapshot(of: Swatch(color: .blue), named: "new-baseline", size: size, store: store)
-        } matching: { issue in
-            issue.comments.contains { $0.rawValue.contains("Recorded a new baseline") }
+        #expect(mismatch?.description.contains("does not match swatch.png") == true)
+        #expect(mismatch?.description.contains("Difference:") == true)
+
+        let recorded = #expect(throws: SnapshotError.self) {
+            try assertSnapshot(of: Swatch(color: .blue), named: "new-baseline", size: size, store: store)
         }
+        #expect(recorded?.description.contains("Recorded a new baseline") == true)
+        // The second run compares against the recorded baseline and passes.
+        try assertSnapshot(of: Swatch(color: .blue), named: "new-baseline", size: size, store: store)
     }
 
-    @Test("failure messages mask registered secrets")
+    @Test("error messages mask registered secrets")
     func maskedFailures() throws {
         let root = temporaryDirectory()
         defer {
@@ -41,12 +44,11 @@ struct SnapshotAssertionTests {
         }
         TestingAutomation.registerSecret("s3cr3t-name")
         let store = SnapshotStore(directory: root, recordMode: .never, environment: [:])
-        let image = try Bitmap(width: 1, height: 1)
-        withKnownIssue {
-            assertSnapshot(of: image, named: "s3cr3t-name", store: store)
-        } matching: { issue in
-            issue.comments.allSatisfy { !$0.rawValue.contains("s3cr3t-name") }
+        let error = #expect(throws: SnapshotError.self) {
+            try assertSnapshot(of: try Bitmap(width: 1, height: 1), named: "s3cr3t-name", store: store)
         }
+        #expect(error?.description.contains("No baseline") == true)
+        #expect(error?.description.contains("s3cr3t-name") == false)
     }
 }
 
