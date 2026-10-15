@@ -142,6 +142,43 @@ struct AccessibilityAuditTests {
         #expect(issues[1].message.contains("Big"))
     }
 
+    @Test("skips the size rule for controls in navigation bars, tab bars and toolbars")
+    func systemBars() {
+        let small = CGRect(x: 0, y: 0, width: 90, height: 36)
+        let issues = AccessibilityAudit(rules: [.smallTouchTarget]).run(on: [
+            ElementDescriptor(kind: .application, depth: 0),
+            ElementDescriptor(kind: .navigationBar, depth: 1),
+            ElementDescriptor(kind: .other, depth: 2),
+            ElementDescriptor(kind: .button, label: "Sign Out", frame: small, depth: 3),
+            ElementDescriptor(kind: .toolbar, depth: 1),
+            ElementDescriptor(kind: .button, label: "Share", frame: small, depth: 2),
+            // Back at depth 1: no longer inside a bar.
+            ElementDescriptor(kind: .button, label: "Details", frame: small, depth: 1),
+            // A depth that skips levels still finds its bar ancestor.
+            ElementDescriptor(kind: .tabBar, depth: 1),
+            ElementDescriptor(kind: .button, label: "Home", frame: small, depth: 5)
+        ])
+        #expect(issues.map(\.element.label) == ["Details"])
+    }
+
+    @Test("treats elements inside a control as part of it")
+    func partsOfControls() {
+        let issues = AccessibilityAudit().run(on: [
+            ElementDescriptor(kind: .switch, identifier: "prices", label: "Show prices",
+                              frame: CGRect(x: 0, y: 0, width: 360, height: 52), depth: 0),
+            ElementDescriptor(kind: .switch, frame: CGRect(x: 280, y: 12, width: 63, height: 28), depth: 1),
+            ElementDescriptor(kind: .button, identifier: "row.1", label: "Kettle",
+                              frame: CGRect(x: 0, y: 60, width: 360, height: 52), depth: 0),
+            ElementDescriptor(kind: .image, identifier: "chevron.forward", frame: CGRect(x: 340, y: 70, width: 10, height: 16), depth: 1),
+            ElementDescriptor(kind: .button, identifier: "row.2", label: "Grinder",
+                              frame: CGRect(x: 0, y: 120, width: 360, height: 52), depth: 0),
+            ElementDescriptor(kind: .image, identifier: "chevron.forward", frame: CGRect(x: 340, y: 130, width: 10, height: 16), depth: 1),
+            // A standalone image is still checked.
+            ElementDescriptor(kind: .image, frame: CGRect(x: 0, y: 200, width: 80, height: 80), depth: 0)
+        ])
+        #expect(issues.map(\.rule) == [.imageWithoutLabel])
+    }
+
     @Test("a non-finite minimum turns the size rule off")
     func nonFiniteMinimum() {
         let small = ElementDescriptor(kind: .button, label: "Info", frame: CGRect(x: 0, y: 0, width: 4, height: 4))

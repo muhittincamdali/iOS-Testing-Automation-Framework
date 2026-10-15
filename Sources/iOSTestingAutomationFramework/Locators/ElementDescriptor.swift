@@ -37,6 +37,7 @@ public struct ElementKind: RawRepresentable, Hashable, Sendable, Codable, Expres
     public static let cell: ElementKind = "cell"
     public static let navigationBar: ElementKind = "navigationBar"
     public static let tabBar: ElementKind = "tabBar"
+    public static let toolbar: ElementKind = "toolbar"
     public static let scrollView: ElementKind = "scrollView"
     public static let table: ElementKind = "table"
     public static let collectionView: ElementKind = "collectionView"

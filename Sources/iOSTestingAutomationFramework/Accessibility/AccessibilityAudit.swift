@@ -22,7 +22,9 @@ public struct AccessibilityAudit: Sendable, Equatable {
         /// An image without a label that is not hidden from accessibility.
         case imageWithoutLabel
         /// An enabled interactive element smaller than ``AccessibilityAudit/minimumTouchTarget``
-        /// (44 × 44 points by default, Apple's Human Interface Guidelines minimum).
+        /// (44 × 44 points by default, Apple's Human Interface Guidelines minimum). Controls
+        /// inside navigation bars, tab bars and toolbars are skipped: the system gives them a
+        /// larger hit area than their drawn frame.
         case smallTouchTarget
         /// A label that repeats the element's kind, such as a button labelled "Close button".
         /// VoiceOver already says "button", so the person hears it twice.
@@ -54,18 +56,40 @@ public struct AccessibilityAudit: Sendable, Equatable {
 
     /// Returns every violation, in element order. Elements with an empty or non-finite frame
     /// are skipped for the size rule only.
+    ///
+    /// The elements are expected parents first with their ``ElementDescriptor/depth``, as
+    /// `XCUIElement.descriptors()` returns them. The depth tells the audit which elements sit
+    /// inside a control (they are part of it and are not checked on their own) and which sit in
+    /// a system bar.
     public func run(on elements: [ElementDescriptor]) -> [Issue] {
         var issues: [Issue] = []
+        var standalone: [ElementDescriptor] = []
+        // The kinds of the current element's ancestors, one entry per depth.
+        var ancestors: [ElementKind] = []
         for element in elements {
-            issues += check(element)
+            let depth = max(element.depth, 0)
+            if ancestors.count > depth { ancestors.removeSubrange(depth...) }
+            // An element inside a control (the switch inside a SwiftUI Toggle, the chevron of a
+            // NavigationLink) is part of it: VoiceOver reads the control as one element.
+            if !ancestors.contains(where: \.isInteractive) {
+                let inSystemBar = ancestors.contains { Self.systemBarKinds.contains($0) }
+                issues += check(element, inSystemBar: inSystemBar)
+                standalone.append(element)
+            }
+            // Pad missing levels so the stack stays aligned with the depth.
+            while ancestors.count < depth { ancestors.append(.other) }
+            ancestors.append(element.kind)
         }
         if rules.contains(.duplicateIdentifier) {
-            issues += duplicateIdentifiers(in: elements)
+            issues += duplicateIdentifiers(in: standalone)
         }
         return issues
     }
 
-    private func check(_ element: ElementDescriptor) -> [Issue] {
+    /// Bars whose controls get a larger hit area from the system than their drawn frame.
+    public static let systemBarKinds: Set<ElementKind> = [.navigationBar, .tabBar, .toolbar]
+
+    private func check(_ element: ElementDescriptor, inSystemBar: Bool) -> [Issue] {
         var issues: [Issue] = []
         let label = element.label.trimmingCharacters(in: .whitespacesAndNewlines)
         if rules.contains(.missingLabel), element.kind.isInteractive, label.isEmpty, (element.placeholder ?? "").isEmpty {
@@ -75,7 +99,8 @@ public struct AccessibilityAudit: Sendable, Equatable {
             issues.append(Issue(rule: .imageWithoutLabel, element: element,
                                 message: "\(element.summary) has no label; describe it or hide it from accessibility"))
         }
-        if rules.contains(.smallTouchTarget), element.kind.isInteractive, element.isEnabled, isTooSmall(element.frame) {
+        if rules.contains(.smallTouchTarget), element.kind.isInteractive, element.isEnabled, !inSystemBar,
+           isTooSmall(element.frame) {
             let size = "\(Self.points(element.frame.width)) × \(Self.points(element.frame.height)) pt"
             let minimum = "\(Self.points(minimumTouchTarget.width)) × \(Self.points(minimumTouchTarget.height)) pt"
             issues.append(Issue(rule: .smallTouchTarget, element: element,

@@ -88,6 +88,7 @@ extension ElementKind {
         .cell: .cell,
         .navigationBar: .navigationBar,
         .tabBar: .tabBar,
+        .toolbar: .toolbar,
         .scrollView: .scrollView,
         .table: .table,
         .collectionView: .collectionView
