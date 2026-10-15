@@ -204,6 +204,24 @@ struct BenchmarkTests {
         #expect(huge.mean.isFinite)
     }
 
+    @Test("decodes through the validating initializer")
+    func decoding() throws {
+        let stats = try #require(SampleStatistics([4, 1, 3, 2, 5]))
+        let decoded = try JSONDecoder().decode(SampleStatistics.self, from: JSONEncoder().encode(stats))
+        #expect(decoded == stats)
+
+        // Stored statistics are recomputed from the measurements, not trusted.
+        let inconsistent = #"{"count":9,"minimum":-1,"maximum":99,"mean":0,"median":0,"standardDeviation":0,"sorted":[2,1]}"#
+        let recomputed = try JSONDecoder().decode(SampleStatistics.self, from: Data(inconsistent.utf8))
+        #expect(recomputed == SampleStatistics([1, 2]))
+
+        // Without a finite measurement, `percentile` would index an empty array.
+        let empty = #"{"count":0,"minimum":0,"maximum":0,"mean":0,"median":0,"standardDeviation":0,"sorted":[]}"#
+        #expect(throws: DecodingError.self) {
+            try JSONDecoder().decode(SampleStatistics.self, from: Data(empty.utf8))
+        }
+    }
+
     @Test("measures the requested number of iterations after the warm-up")
     func measures() async throws {
         let calls = Spy<Void, Void>()

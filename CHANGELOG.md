@@ -78,6 +78,9 @@ every UI helper, and merges the useful parts of iOSTestingTools, which is being 
   and out-of-range values instead of trapping.
 - Spies, the healing log, the audit's ancestor tracking and edit-distance work have fixed upper
   bounds.
+- Decoding `SampleStatistics` goes through its validating initializer and recomputes the
+  statistics from the measurements, so data without a finite measurement throws instead of
+  making `percentile(_:)` crash.
 - Typed secrets and credential patterns are masked in activity names, failure messages,
   `junit.xml` and `summary.md`. A secret is also found where a URL or form encoder
   percent-encoded it (hex in either case), where it was JSON-escaped (also as `\u00e4`), in

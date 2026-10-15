@@ -38,6 +38,36 @@ public struct SampleStatistics: Sendable, Hashable, Codable {
         return Self.percentile(min(max(percent, 0), 100), of: sorted)
     }
 
+    private enum CodingKeys: String, CodingKey {
+        case count, minimum, maximum, mean, median, standardDeviation, sorted
+    }
+
+    /// Decodes the measurements and recomputes everything else from them through
+    /// ``init(_:)``, so decoded statistics are always consistent. Throws when there is no
+    /// finite measurement, which `init(_:)` rejects.
+    public init(from decoder: any Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        let values = try container.decode([Double].self, forKey: .sorted)
+        guard let statistics = SampleStatistics(values) else {
+            throw DecodingError.dataCorruptedError(
+                forKey: .sorted, in: container,
+                debugDescription: "SampleStatistics needs at least one finite measurement"
+            )
+        }
+        self = statistics
+    }
+
+    public func encode(to encoder: any Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(count, forKey: .count)
+        try container.encode(minimum, forKey: .minimum)
+        try container.encode(maximum, forKey: .maximum)
+        try container.encode(mean, forKey: .mean)
+        try container.encode(median, forKey: .median)
+        try container.encode(standardDeviation, forKey: .standardDeviation)
+        try container.encode(sorted, forKey: .sorted)
+    }
+
     private static func percentile(_ percent: Double, of sorted: [Double]) -> Double {
         let position = percent / 100 * Double(sorted.count - 1)
         let lower = Int(position.rounded(.down))
