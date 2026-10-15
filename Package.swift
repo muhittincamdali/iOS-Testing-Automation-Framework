@@ -21,7 +21,9 @@ let package = Package(
         .testTarget(
             name: "iOSTestingAutomationFrameworkTests",
             dependencies: ["iOSTestingAutomationFramework"],
-            path: "Tests/iOSTestingAutomationFrameworkTests"
+            path: "Tests/iOSTestingAutomationFrameworkTests",
+            // Baseline images for the snapshot tests, read from disk at run time.
+            exclude: ["__Snapshots__"]
         )
     ]
 )
