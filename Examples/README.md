@@ -14,6 +14,7 @@ The UI tests show each part of the XCUITest layer on a real app:
 | [`ShopFlowTests.swift`](AutomationShowcase/AutomationShowcaseUITests/ShopFlowTests.swift)                 | A sign-in and cart flow as one robot chain; a typed password masked in the report                                                 |
 | [`HealingAndAuditTests.swift`](AutomationShowcase/AutomationShowcaseUITests/HealingAndAuditTests.swift)   | An outdated identifier healed by its label; the accessibility audit on clean screens and on a screen with two deliberate mistakes |
 | [`VisualRegressionTests.swift`](AutomationShowcase/AutomationShowcaseUITests/VisualRegressionTests.swift) | A screenshot baseline, a passing comparison, and a change that the comparison catches, in light and dark appearance               |
+| [`QuickStartTests.swift`](AutomationShowcase/AutomationShowcaseUITests/QuickStartTests.swift) | The README's quick start: a counter screen and its robot |
 | [`ShowcaseTestCase.swift`](AutomationShowcase/AutomationShowcaseUITests/ShowcaseTestCase.swift)           | `TestResultCollector`, which writes `junit.xml` and `summary.md`                                                                  |
 
 Run it:

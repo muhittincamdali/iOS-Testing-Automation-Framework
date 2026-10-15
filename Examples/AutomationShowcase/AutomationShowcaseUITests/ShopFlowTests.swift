@@ -5,7 +5,7 @@ final class ShopFlowTests: ShowcaseTestCase {
     @MainActor
     func testSignInAndFillTheCart() {
         launch()
-        // The README's quick-start test is this chain.
+        // The README's robot sample is this chain.
         app.on(SignInRobot.self)
             .signIn(email: "ada@example.com", password: "correct-horse-battery")
             .assertCart(contains: 0)

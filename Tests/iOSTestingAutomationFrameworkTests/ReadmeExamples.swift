@@ -47,13 +47,12 @@ final class ProfileModel {
 }
 
 @Suite("README samples")
-@MainActor
 struct ReadmeExamples {
-    @Test func signalBarsLookRight() throws {
+    @Test @MainActor func signalBarsLookRight() throws {
         try assertSnapshot(of: SignalBars(level: 3), named: "signal-bars-3", size: CGSize(width: 44, height: 32))
     }
 
-    @Test func profileLoadsTheUser() async throws {
+    @Test @MainActor func profileLoadsTheUser() async throws {
         let service = FakeUserService()
         let model = ProfileModel(service: service)
 
