@@ -1,4 +1,4 @@
-<!-- i18n-source: README.md@f538d6e779afe3cd003645722b6571419027f952 status=reviewed -->
+<!-- i18n-source: README.md@e359efcbf2fd2cbac05fd38b031a929942168a20 status=reviewed -->
 <!-- brand:start -->
 
 <p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/muhittincamdali/iOS-Testing-Automation-Framework/main/.github/brand/banner-zh-CN-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/muhittincamdali/iOS-Testing-Automation-Framework/main/.github/brand/banner-zh-CN-light.svg"><img src="https://raw.githubusercontent.com/muhittincamdali/iOS-Testing-Automation-Framework/main/.github/brand/banner-zh-CN-light.svg" alt="iOS Testing Automation: 面向 XCUITest 的 Robot、自愈定位、截图对比、无障碍审查和 CI 报告。"></picture></p>
