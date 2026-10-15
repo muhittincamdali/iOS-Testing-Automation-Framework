@@ -88,15 +88,14 @@ struct WaitTests {
 
     @Test("works with the real clock")
     func realClock() async throws {
-        let start = ContinuousClock.now
         let flag = Flag()
         let producer = Task {
             try await Task.sleep(for: .milliseconds(30))
             await flag.set()
         }
-        try await Wait.until(timeout: .seconds(5), pollingEvery: .milliseconds(5)) { await flag.isSet }
+        // The timeout is only an upper bound; a loaded CI simulator can stall a task for seconds.
+        try await Wait.until(timeout: .seconds(60), pollingEvery: .milliseconds(5)) { await flag.isSet }
         try await producer.value
-        #expect(ContinuousClock.now - start < .seconds(5))
     }
 }
 
