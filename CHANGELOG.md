@@ -13,6 +13,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   first ⌘V was only late rather than dropped, the repeated paste added a second copy; a
   repeat now selects the field's text first (⌘A) and replaces it. A field that already held
   text gets a single paste, because selecting all would delete that text.
+- `Wait.until` and `Wait.value` run the condition on the caller's actor instead of hopping to
+  the shared concurrent pool for every check, so tests running in parallel can no longer delay
+  a check past the deadline.
 
 ## 2.0.0 - 2026-10-15
 

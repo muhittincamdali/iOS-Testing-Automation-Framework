@@ -13,6 +13,10 @@ import Foundation
 /// check happens at the deadline, so a condition that becomes true just before the timeout is
 /// still seen. A negative timeout is treated as zero, and an interval shorter than one
 /// millisecond is raised to one millisecond so the loop never spins.
+///
+/// The condition runs on the caller's actor, so a wait on the main actor never goes through the
+/// shared concurrent pool, where tests running in parallel could delay a check past the
+/// deadline. A check that runs late still counts: the deadline is compared only after it.
 public enum Wait {
     /// The default timeout: five seconds.
     public static let defaultTimeout: Duration = .seconds(5)
@@ -42,7 +46,7 @@ public enum Wait {
         timeout: Duration = defaultTimeout,
         pollingEvery interval: Duration = defaultInterval,
         isolation: isolated (any Actor)? = #isolation,
-        _ condition: () async throws -> Bool
+        _ condition: nonisolated(nonsending) () async throws -> Bool
     ) async throws {
         _ = try await value(message(), timeout: timeout, pollingEvery: interval, clock: ContinuousClock()) {
             try await condition() ? true : nil
@@ -55,7 +59,7 @@ public enum Wait {
         timeout: Duration = defaultTimeout,
         pollingEvery interval: Duration = defaultInterval,
         isolation: isolated (any Actor)? = #isolation,
-        _ produce: () async throws -> Value?
+        _ produce: nonisolated(nonsending) () async throws -> Value?
     ) async throws -> Value {
         try await value(message(), timeout: timeout, pollingEvery: interval, clock: ContinuousClock(), produce)
     }
@@ -69,7 +73,7 @@ public enum Wait {
         pollingEvery interval: Duration = defaultInterval,
         clock: C,
         isolation: isolated (any Actor)? = #isolation,
-        _ produce: () async throws -> Value?
+        _ produce: nonisolated(nonsending) () async throws -> Value?
     ) async throws -> Value where C.Duration == Duration {
         let timeout = max(timeout, .zero)
         let interval = max(interval, .milliseconds(1))
