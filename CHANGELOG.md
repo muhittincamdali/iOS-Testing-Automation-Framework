@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- `Robot.typeSecret(_:into:)` no longer enters a secret twice on a slow machine. When the
+  first ⌘V was only late rather than dropped, the repeated paste added a second copy; a
+  repeat now selects the field's text first (⌘A) and replaces it. A field that already held
+  text gets a single paste, because selecting all would delete that text.
+
 ## 2.0.0 - 2026-10-15
 
 A rebuilt package. In June 2026 the 1.0.0 sources were replaced with placeholder code (a visual

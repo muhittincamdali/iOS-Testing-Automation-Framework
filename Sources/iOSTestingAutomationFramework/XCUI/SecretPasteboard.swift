@@ -50,12 +50,21 @@ enum SecretPasteboard {
             _ = element.value
             return nil
         }
-        // On the iOS simulator a ⌘V right after the app launches is sometimes dropped. A paste
-        // is repeated only while the field's value is still unchanged after `retryInterval`;
-        // a paste that arrives that late would show up as the secret entered twice.
-        for attempt in 1...pasteAttempts {
+        // On the iOS simulator the first ⌘V after an app launches is often dropped, so the paste
+        // is repeated while the field still shows its old value after `retryInterval`. On a
+        // busy machine that ⌘V is sometimes only late: it lands after the check, and a plain
+        // repeat entered the secret twice. The app handles key events in order, so a repeat
+        // selects all (⌘A) first and replaces whatever a late paste inserted. Selecting all
+        // would also replace text that was already in the field, so such a field gets one
+        // paste and the whole timeout. XCUITest reports an empty field's placeholder as its value.
+        let fieldWasEmpty = before.isEmpty || before == element.placeholderValue
+        let attempts = fieldWasEmpty ? pasteAttempts : 1
+        for attempt in 1...attempts {
+            if attempt > 1 {
+                element.typeKey("a", modifierFlags: .command)
+            }
             element.typeKey("v", modifierFlags: .command)
-            let wait = attempt < pasteAttempts ? min(retryInterval, timeout) : timeout
+            let wait = attempt < attempts ? min(retryInterval, timeout) : timeout
             if element.waitForValueChange(from: before, timeout: wait) { return true }
         }
         return false
